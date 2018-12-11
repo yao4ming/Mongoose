@@ -1,0 +1,56 @@
+ .listview {
+  list-style-type: none;
+  font-family: sans-serif;
+  overflow: auto;
+  height: inherit;
+  cursor: pointer;
+}
+
+.listview li {
+  padding: .7em 15px;
+  border: 1px solid #bbb;
+  cursor: hand;
+}
+
+.listview li:nth-child(n+2) {
+  border-top: 0;
+}
+
+.listview li:hover { 
+    background-color: #D9EFF7;    
+}
+
+.item{
+  float: left;
+  width: 33.3%;
+  text-align: center; 
+}
+
+.item0 {
+  float: left;
+  text-align: left; 
+}
+
+.item1 {
+  float: right;
+  text-align: right; 
+}
+
+.item2 {
+  font-weight: bold; 
+  float: left;
+  text-align: left; 
+}
+
+.item3 {
+  float: right;
+  text-align: right; 
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+li:nth-child(even) {background: #efefef}
+li:nth-child(odd) {background: #FFF}
