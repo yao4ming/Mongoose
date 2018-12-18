@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormsAndObjectsExport Version="010000">
+   <Forms Type="1">
+      <Form Name="ImageOptimizationWizard" Scope="1" ScopeName="[NULL]">
+         <Caption />
+         <Type>1</Type>
+         <StandardOperations>1019</StandardOperations>
+         <Flags>1048584</Flags>
+         <Height>40</Height>
+         <LeftPos>0</LeftPos>
+         <TopPos>0</TopPos>
+         <Width>110</Width>
+         <HelpContextID>-1</HelpContextID>
+         <PaneZeroSize>0</PaneZeroSize>
+         <PrimaryDataSource>V(fds_DataSource)</PrimaryDataSource>
+         <MasterDeviceID>0</MasterDeviceID>
+         <Components>
+            <Component Name="button1">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>5</TabOrder>
+               <TopPos>24.1764705882353</TopPos>
+               <LeftPos>45.375</LeftPos>
+               <Height>2.23529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>18.375</Width>
+               <Caption>Optimize</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>optimizeImage</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) ENABLEDWHEN(V(cew_button1))</Post301Format>
+               <EffectiveCaption>Optimize</EffectiveCaption>
+            </Component>
+            <Component Name="comboBox1">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>16</TabOrder>
+               <TopPos>9.64705882352941</TopPos>
+               <LeftPos>52.625</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varIDO</DataSource>
+               <Binding>6</Binding>
+               <ComboListSource>STDOLE MGCore.IDOCollections(  PROPERTIES(CollectionName, CollectionDesc) DISPLAY(1))</ComboListSource>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="comboBox2">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>17</TabOrder>
+               <TopPos>11.6470588235294</TopPos>
+               <LeftPos>52.625</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varUnOptimizedProperty</DataSource>
+               <Binding>6</Binding>
+               <ComboListSource>STDOLE MGCore.IdoProperties(  PROPERTIES(PropertyName) DISPLAY(1)FILTER(CollectionName = FV(varIDO))ORDERBY(PropertyName))</ComboListSource>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="comboBox3">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>20</TabOrder>
+               <TopPos>13.7647058823529</TopPos>
+               <LeftPos>52.625</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varOptimizedProperty</DataSource>
+               <Binding>6</Binding>
+               <ComboListSource>STDOLE MGCore.IdoProperties(  PROPERTIES(PropertyName) DISPLAY(1)FILTER(CollectionName = FV(varIDO))ORDERBY(PropertyName))</ComboListSource>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="edit1">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>9</TabOrder>
+               <TopPos>16.2352941176471</TopPos>
+               <LeftPos>52.5</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varResizeWidth</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="edit2">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>11</TabOrder>
+               <TopPos>18.1764705882353</TopPos>
+               <LeftPos>52.5</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varResizeHeight</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="edit3">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>13</TabOrder>
+               <TopPos>20.0588235294118</TopPos>
+               <LeftPos>52.5</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varCompression</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="static1">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>19</TabOrder>
+               <TopPos>13.8823529411765</TopPos>
+               <LeftPos>30.5</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>19.75</Width>
+               <Caption>Optimized Image Property</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>Optimized Image Property</EffectiveCaption>
+            </Component>
+            <Component Name="static3">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>8</TabOrder>
+               <TopPos>16.4705882352941</TopPos>
+               <LeftPos>30.375</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>19.75</Width>
+               <Caption>Optimum Width</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>Optimum Width</EffectiveCaption>
+            </Component>
+            <Component Name="static3_SITE">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>23</TabOrder>
+               <TopPos>4.17647058823529</TopPos>
+               <LeftPos>21.375</LeftPos>
+               <Height>2.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>63.5</Width>
+               <Caption>Image Optimizer</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>FONT(26,0,0,0,700,0,0,0,1,0,0,0,0,Arial) AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <EffectiveCaption>Image Optimizer</EffectiveCaption>
+            </Component>
+            <Component Name="static4">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>10</TabOrder>
+               <TopPos>18.3529411764706</TopPos>
+               <LeftPos>30.375</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>19.75</Width>
+               <Caption>Optimum Height</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>Optimum Height</EffectiveCaption>
+            </Component>
+            <Component Name="static5">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>12</TabOrder>
+               <TopPos>20.1764705882353</TopPos>
+               <LeftPos>10.5</LeftPos>
+               <Height>2.17647058823529</Height>
+               <ListHeight>0</ListHeight>
+               <Width>39.625</Width>
+               <Caption>sJpegQualityScale</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sJpegQualityScale</EffectiveCaption>
+            </Component>
+            <Component Name="static6">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>14</TabOrder>
+               <TopPos>9.88235294117647</TopPos>
+               <LeftPos>30.5</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>19.75</Width>
+               <Caption>IDO</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>IDO</EffectiveCaption>
+            </Component>
+            <Component Name="static7">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>15</TabOrder>
+               <TopPos>11.7647058823529</TopPos>
+               <LeftPos>21</LeftPos>
+               <Height>1.29411764705882</Height>
+               <ListHeight>0</ListHeight>
+               <Width>29.25</Width>
+               <Caption>Un-Optimized Image Property</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>Un-Optimized Image Property</EffectiveCaption>
+            </Component>
+         </Components>
+         <EventHandlers>
+            <EventHandler Name="optimizeImage" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>optimizeImage()</Response>
+            </EventHandler>
+         </EventHandlers>
+         <Variables>
+            <Variable Name="cew_button1">
+               <Value>Enabled:#C(button1), #V(varCompression) &lt;&gt; "" &amp; #V(varResizeWidth) &lt;&gt; "" &amp; #V(varResizeHeight) &lt;&gt; "", "True"</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+            <Variable Name="fds_DataSource">
+               <Value>( FILTERPERM(Picture IS NOT NULL) DISTINCT() LOCKMODE(Row) )</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+            <Variable Name="InitialCommand">
+               <Value>Refresh</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+         </Variables>
+         <Script Language="Visual C#">
+            <ScriptLines>
+               <ScriptLine>using System;</ScriptLine>
+               <ScriptLine>using System.IO;</ScriptLine>
+               <ScriptLine>using System.Drawing;</ScriptLine>
+               <ScriptLine>using System.Drawing.Drawing2D;</ScriptLine>
+               <ScriptLine>using System.Drawing.Imaging;</ScriptLine>
+               <ScriptLine>using Mongoose.IDO.Protocol;</ScriptLine>
+               <ScriptLine>using Mongoose.Scripting;</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>namespace Mongoose.FormScripts</ScriptLine>
+               <ScriptLine>{</ScriptLine>
+               <ScriptLine>   public class ImageOptimizationWizard : FormScript</ScriptLine>
+               <ScriptLine>   {</ScriptLine>
+               <ScriptLine>      public void optimizeImage() {</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         string ido = ThisForm.Variables("varIDO").Value;</ScriptLine>
+               <ScriptLine>         string unOptimizedImageProperty = ThisForm.Variables("varUnOptimizedProperty").Value;</ScriptLine>
+               <ScriptLine>         string optimizedImageProperty = ThisForm.Variables("varOptimizedProperty").Value;</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         LoadCollectionResponseData response = loadCollection(ido, unOptimizedImageProperty);</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         int width = Int32.Parse(ThisForm.Variables("varResizeWidth").Value);</ScriptLine>
+               <ScriptLine>         int height = Int32.Parse(ThisForm.Variables("varResizeHeight").Value);</ScriptLine>
+               <ScriptLine>         int compression = Int32.Parse(ThisForm.Variables("varCompression").Value);</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         if (response.Items.Count &gt; 0) {</ScriptLine>
+               <ScriptLine>            for (int i = 0; i &lt; response.Items.Count; i++) {</ScriptLine>
+               <ScriptLine>               Image image = Base64ToImage(response[i, unOptimizedImageProperty].Value);</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>               //a holder for the result</ScriptLine>
+               <ScriptLine>               Bitmap result = new Bitmap(width, height);</ScriptLine>
+               <ScriptLine>               //set the resolutions the same to avoid cropping due to resolution differences</ScriptLine>
+               <ScriptLine>               result.SetResolution(image.HorizontalResolution, image.VerticalResolution);</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>               //use a graphics object to draw the resized image into the bitmap</ScriptLine>
+               <ScriptLine>               using (Graphics graphics = Graphics.FromImage(result))</ScriptLine>
+               <ScriptLine>               {</ScriptLine>
+               <ScriptLine>                   //set the resize quality modes to high quality</ScriptLine>
+               <ScriptLine>                   graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;</ScriptLine>
+               <ScriptLine>                   graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;</ScriptLine>
+               <ScriptLine>                   graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;</ScriptLine>
+               <ScriptLine>                   //draw the image into the target bitmap</ScriptLine>
+               <ScriptLine>                   graphics.DrawImage(image, 0, 0, result.Width, result.Height);</ScriptLine>
+               <ScriptLine>               }</ScriptLine>
+               <ScriptLine>               updateCollection(response, i, ido, optimizedImageProperty, ImageToBase64(result, System.Drawing.Imaging.ImageFormat.Jpeg, compression));</ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine>             Application.ShowMessage("load collection returned " + response.Items.Count.ToString());</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>      public LoadCollectionResponseData loadCollection(string ido, string unOptimizedImageProperty) {</ScriptLine>
+               <ScriptLine>         // Collection Load</ScriptLine>
+               <ScriptLine>         LoadCollectionRequestData Load = new LoadCollectionRequestData();</ScriptLine>
+               <ScriptLine>         Load.IDOName = ido;</ScriptLine>
+               <ScriptLine>         Load.PropertyList.SetProperties(unOptimizedImageProperty + ", RecordDate, RowPointer");</ScriptLine>
+               <ScriptLine>         Load.Filter = unOptimizedImageProperty + " IS NOT NULL";</ScriptLine>
+               <ScriptLine>         Load.OrderBy = "";</ScriptLine>
+               <ScriptLine>         Load.RecordCap = 200;</ScriptLine>
+               <ScriptLine>         return IDOClient.LoadCollection(Load);</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>      public void updateCollection(LoadCollectionResponseData collection, int i, string ido, string optimizedImageProperty, string optimizedImage) {</ScriptLine>
+               <ScriptLine>         // Collection Update</ScriptLine>
+               <ScriptLine>         UpdateCollectionRequestData upd = new UpdateCollectionRequestData(ido);</ScriptLine>
+               <ScriptLine>         IDOUpdateItem itm = new IDOUpdateItem(UpdateAction.Update);</ScriptLine>
+               <ScriptLine>         itm.Properties.Add(optimizedImageProperty, optimizedImage);</ScriptLine>
+               <ScriptLine>         itm.Properties.Add("RecordDate", collection[i, "RecordDate"].Value);</ScriptLine>
+               <ScriptLine>         itm.Properties.Add("RowPointer", collection[i, "RowPointer"].Value);</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         upd.Items.Add(itm);</ScriptLine>
+               <ScriptLine>         IDOClient.UpdateCollection(upd);  </ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>      public Image Base64ToImage(string base64String) {</ScriptLine>
+               <ScriptLine>          // Convert Base64 String to byte[]</ScriptLine>
+               <ScriptLine>          byte[] imageBytes = Convert.FromBase64String(base64String);</ScriptLine>
+               <ScriptLine>          MemoryStream ms = new MemoryStream(imageBytes, 0, imageBytes.Length);</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>          // Convert byte[] to Image</ScriptLine>
+               <ScriptLine>          ms.Write(imageBytes, 0, imageBytes.Length);</ScriptLine>
+               <ScriptLine>          Image image = Image.FromStream(ms, true);</ScriptLine>
+               <ScriptLine>          return image;</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>      public string ImageToBase64(Image image, System.Drawing.Imaging.ImageFormat format, int jpegQuality) {</ScriptLine>
+               <ScriptLine>         using (MemoryStream ms = new MemoryStream()) {</ScriptLine>
+               <ScriptLine>            //ensure the quality is within the correct range</ScriptLine>
+               <ScriptLine>            if ((jpegQuality &lt; 0) || (jpegQuality &gt; 100)) {</ScriptLine>
+               <ScriptLine>                //create the error message</ScriptLine>
+               <ScriptLine>                string error = string.Format("Jpeg image quality must be between 0 and 100, with 100 being the highest quality.  A value of {0} was specified.", jpegQuality);</ScriptLine>
+               <ScriptLine>                //throw a helpful exception</ScriptLine>
+               <ScriptLine>                throw new ArgumentOutOfRangeException(error);</ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            //create an encoder parameter for the image quality</ScriptLine>
+               <ScriptLine>            EncoderParameter qualityParam = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, jpegQuality);</ScriptLine>
+               <ScriptLine>            //get the jpeg codec</ScriptLine>
+               <ScriptLine>            ImageCodecInfo jpegCodec = GetEncoderInfo("image/jpeg");</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            //create a collection of all parameters that we will pass to the encoder</ScriptLine>
+               <ScriptLine>            EncoderParameters encoderParams = new EncoderParameters(1);</ScriptLine>
+               <ScriptLine>            //set the quality parameter for the codec</ScriptLine>
+               <ScriptLine>            encoderParams.Param[0] = qualityParam;</ScriptLine>
+               <ScriptLine>            //save the image using the codec and the parameters</ScriptLine>
+               <ScriptLine>            image.Save(ms, jpegCodec, encoderParams);</ScriptLine>
+               <ScriptLine />
+               <ScriptLine />
+               <ScriptLine>            byte[] imageBytes = ms.ToArray();</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            // Convert byte[] to Base64 String</ScriptLine>
+               <ScriptLine>            string base64String = Convert.ToBase64String(imageBytes);</ScriptLine>
+               <ScriptLine>            return base64String;</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>      private static ImageCodecInfo GetEncoderInfo(String mimeType) {</ScriptLine>
+               <ScriptLine>         ImageCodecInfo[] encoders;</ScriptLine>
+               <ScriptLine>         encoders = ImageCodecInfo.GetImageEncoders();</ScriptLine>
+               <ScriptLine>         for(int j = 0; j &lt; encoders.Length; ++j) {</ScriptLine>
+               <ScriptLine>            if(encoders[j].MimeType == mimeType)</ScriptLine>
+               <ScriptLine>                return encoders[j];</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         return null;</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>   }</ScriptLine>
+               <ScriptLine>}</ScriptLine>
+            </ScriptLines>
+         </Script>
+      </Form>
+   </Forms>
+</FormsAndObjectsExport>
