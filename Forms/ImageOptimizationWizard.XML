@@ -354,23 +354,23 @@
                <ScriptLine>   public class ImageOptimizationWizard : FormScript</ScriptLine>
                <ScriptLine>   {</ScriptLine>
                <ScriptLine>      public void main() {</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         string ido = ThisForm.Variables("varIDO").Value;</ScriptLine>
                <ScriptLine>         string unOptimizedImageProperty = ThisForm.Variables("varUnOptimizedProperty").Value;</ScriptLine>
                <ScriptLine>         string optimizedImageProperty = ThisForm.Variables("varOptimizedProperty").Value;</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         LoadCollectionResponseData response = loadCollection(ido, unOptimizedImageProperty);</ScriptLine>
                <ScriptLine>         Application.ShowMessage(response.Items.Count.ToString());</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         int width = Int32.Parse(ThisForm.Variables("varResizeWidth").Value);</ScriptLine>
                <ScriptLine>         int height = Int32.Parse(ThisForm.Variables("varResizeHeight").Value);</ScriptLine>
                <ScriptLine>         int compression = Int32.Parse(ThisForm.Variables("varCompression").Value);</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         if (response.Items.Count &gt; 0) {</ScriptLine>
                <ScriptLine>            for (int i = 0; i &lt; 1; i++) {</ScriptLine>
-               <ScriptLine>               </ScriptLine>
+               <ScriptLine />
                <ScriptLine>               Image image = Base64ToImage(response[i, unOptimizedImageProperty].Value);</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>               //a holder for the result</ScriptLine>
                <ScriptLine>               Bitmap result = new Bitmap(width, height);</ScriptLine>
                <ScriptLine>               //set the resolutions the same to avoid cropping due to resolution differences</ScriptLine>
@@ -388,10 +388,10 @@
                <ScriptLine>               }</ScriptLine>
                <ScriptLine>               updateCollection(response, i, ido, optimizedImageProperty, ImageToBase64(result, System.Drawing.Imaging.ImageFormat.Jpeg, compression));</ScriptLine>
                <ScriptLine>            }</ScriptLine>
-               <ScriptLine>            </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>      }</ScriptLine>
-               <ScriptLine>      </ScriptLine>
+               <ScriptLine />
                <ScriptLine>      public LoadCollectionResponseData loadCollection(string ido, string unOptimizedImageProperty) {</ScriptLine>
                <ScriptLine>         // Collection Load</ScriptLine>
                <ScriptLine>         LoadCollectionRequestData Load = new LoadCollectionRequestData();</ScriptLine>
@@ -402,7 +402,7 @@
                <ScriptLine>         Load.RecordCap = 200;</ScriptLine>
                <ScriptLine>         return IDOClient.LoadCollection(Load);</ScriptLine>
                <ScriptLine>      }</ScriptLine>
-               <ScriptLine>      </ScriptLine>
+               <ScriptLine />
                <ScriptLine>      public void updateCollection(LoadCollectionResponseData collection, int i, string ido, string optimizedImageProperty, string optimizedImage) {</ScriptLine>
                <ScriptLine>         // Collection Update</ScriptLine>
                <ScriptLine>         UpdateCollectionRequestData upd = new UpdateCollectionRequestData(ido);</ScriptLine>
@@ -414,24 +414,24 @@
                <ScriptLine>         upd.Items.Add(itm);</ScriptLine>
                <ScriptLine>         IDOClient.UpdateCollection(upd);  </ScriptLine>
                <ScriptLine>      }</ScriptLine>
-               <ScriptLine>      </ScriptLine>
+               <ScriptLine />
                <ScriptLine>      public void optimizeImage() {</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         if (ThisForm.Variables("varResizeWidth").Value.Equals("") || </ScriptLine>
                <ScriptLine>            ThisForm.Variables("varResizeHeight").Value.Equals("") || </ScriptLine>
                <ScriptLine>            ThisForm.Variables("varCompression").Value.Equals("")) {</ScriptLine>
                <ScriptLine>            Application.ShowMessage("Make sure width, height, and compression are filled out");</ScriptLine>
                <ScriptLine>            return;</ScriptLine>
                <ScriptLine>         }</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         int width = Int32.Parse(ThisForm.Variables("varResizeWidth").Value);</ScriptLine>
                <ScriptLine>         int height = Int32.Parse(ThisForm.Variables("varResizeHeight").Value);</ScriptLine>
                <ScriptLine>         int compression = Int32.Parse(ThisForm.Variables("varCompression").Value);</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>         ThisForm.PrimaryIDOCollection.First();</ScriptLine>
                <ScriptLine>         for (int i = 0; i &lt; ThisForm.PrimaryIDOCollection.GetNumEntries() - 1; i++) {</ScriptLine>
                <ScriptLine>            Image image = Base64ToImage(ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("Picture"));</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>            //a holder for the result</ScriptLine>
                <ScriptLine>            Bitmap result = new Bitmap(width, height);</ScriptLine>
                <ScriptLine>            //set the resolutions the same to avoid cropping due to resolution differences</ScriptLine>
@@ -447,13 +447,13 @@
                <ScriptLine>                //draw the image into the target bitmap</ScriptLine>
                <ScriptLine>                graphics.DrawImage(image, 0, 0, result.Width, result.Height);</ScriptLine>
                <ScriptLine>            }</ScriptLine>
-               <ScriptLine>            </ScriptLine>
+               <ScriptLine />
                <ScriptLine>            ThisForm.PrimaryIDOCollection.SetCurrentObjectProperty("optimized_picture", ImageToBase64(result, System.Drawing.Imaging.ImageFormat.Jpeg, compression));</ScriptLine>
                <ScriptLine>            ThisForm.PrimaryIDOCollection.Next();</ScriptLine>
                <ScriptLine>         }</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine />
                <ScriptLine>      }</ScriptLine>
-               <ScriptLine>      </ScriptLine>
+               <ScriptLine />
                <ScriptLine>      public Image Base64ToImage(string base64String) {</ScriptLine>
                <ScriptLine>          // Convert Base64 String to byte[]</ScriptLine>
                <ScriptLine>          byte[] imageBytes = Convert.FromBase64String(base64String);</ScriptLine>
@@ -464,7 +464,7 @@
                <ScriptLine>          Image image = Image.FromStream(ms, true);</ScriptLine>
                <ScriptLine>          return image;</ScriptLine>
                <ScriptLine>      }</ScriptLine>
-               <ScriptLine>      </ScriptLine>
+               <ScriptLine />
                <ScriptLine>      public string ImageToBase64(Image image, System.Drawing.Imaging.ImageFormat format, int jpegQuality) {</ScriptLine>
                <ScriptLine>         using (MemoryStream ms = new MemoryStream()) {</ScriptLine>
                <ScriptLine>            //ensure the quality is within the correct range</ScriptLine>
@@ -486,7 +486,7 @@
                <ScriptLine>            encoderParams.Param[0] = qualityParam;</ScriptLine>
                <ScriptLine>            //save the image using the codec and the parameters</ScriptLine>
                <ScriptLine>            image.Save(ms, jpegCodec, encoderParams);</ScriptLine>
-               <ScriptLine>            </ScriptLine>
+               <ScriptLine />
                <ScriptLine />
                <ScriptLine>            byte[] imageBytes = ms.ToArray();</ScriptLine>
                <ScriptLine />
@@ -495,7 +495,7 @@
                <ScriptLine>            return base64String;</ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>      }</ScriptLine>
-               <ScriptLine>      </ScriptLine>
+               <ScriptLine />
                <ScriptLine>      private static ImageCodecInfo GetEncoderInfo(String mimeType) {</ScriptLine>
                <ScriptLine>         int j;</ScriptLine>
                <ScriptLine>         ImageCodecInfo[] encoders;</ScriptLine>
