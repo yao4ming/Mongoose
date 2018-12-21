@@ -54,16 +54,13 @@ function setCarouselContent(idm, id) {
 
   $(window).resize(function() {
       console.log("resizing");
-      resizeElementWidth($("#slider-" + id));
+      $("#slider-" + id).width("auto");
+      
       setTimeout(function() {
          $('#slider-' + id + ' ul li').width(document.getElementById('slider-' + id).clientWidth);
       }, 400);
 
       $('#carouselId').css("margin-left", "0px");
-      /*
-      resizeElementHeight($('#slider'));
-      $('#slider-' + id + ' ul li').height($('#slider-' + id).height());
-      */
   });
 }
 
@@ -72,8 +69,8 @@ IDMCarousel.prototype = {
   getHtml : function() {
      var id = this.id;
      return ('<div id="slider-' + id + '">' +
-              '<a href="#" class="control_next"><img width="40px" src="https://metdevap.mongoose.awsdev.infor.io/WsWebClient/dynamic/metadata/$app/images/arrowright.png" /></a>' +
-              '<a href="#" class="control_prev"><img width="40px" src="https://metdevap.mongoose.awsdev.infor.io/WsWebClient/dynamic/metadata/$app/images/arrowleft.png" /></a>' +
+               '<a href="#" class="control_next"><img width="40px" src="../WSWebClient/dynamic/metadata/$app/images/arrowright.png" /></a>' +
+              '<a href="#" class="control_prev"><img width="40px" src="../WSWebClient/dynamic/metadata/$app/images/arrowleft.png" /></a>' +
               '<ul id="carouselId"></ul>' +
            '</div>');
   },
@@ -81,7 +78,7 @@ IDMCarousel.prototype = {
   onFormReady : function() {
 
      var sliderId = '#slider-' + this.id;
-     var css = sliderId + ' { position: relative; overflow: hidden; margin: 0px auto 0 auto; border-radius: 4px; } ' + sliderId + ' ul { position: relative; margin: 0; padding: 0; height: 200px; list-style: none; } ' + sliderId + ' ul li { cursor: pointer; position: relative; display: block; float: left; margin: 0; padding: 0; background: #ccc; text-align: center; line-height: 300px; } ' + sliderId + ':hover > a.control_next { display: block; } ' + sliderId + ':hover > a.control_prev { display: block; } @media screen and (min-width: 320px) and (max-width: 645px) { a.control_prev { top: 80px; } a.control_next { top: 80px; } ' + sliderId + ' { height: 229px !important; } ' + sliderId + ' ul li { height: 229px !important; } } @media screen and (min-width: 646px) and (max-width: 1008px) { a.control_prev { top: 350px; } a.control_next { top: 350px; } ' + sliderId + ' { height: 810px !important; } ' + sliderId + ' ul li { height: 810px !important; } }',
+     var css = sliderId + ' { position: relative; overflow: hidden; margin: 0px auto 0 auto; border-radius: 4px; } ' + sliderId + ' ul { position: relative; margin: 0; padding: 0; height: 200px; list-style: none; } ' + sliderId + ' ul li { cursor: pointer; position: relative; display: block; float: left; margin: 0; padding: 0; background: #ccc; text-align: center; line-height: 300px; } ' + sliderId + ':hover > a.control_next { display: block; } ' + sliderId + ':hover > a.control_prev { display: block; } @media screen and (min-width: 320px) and (max-width: 645px) { a.control_prev { top: 40%; } a.control_next { top: 40%; } ' + sliderId + ' { height: 229px !important; } ' + sliderId + ' ul li { height: 229px !important; } } @media screen and (min-width: 646px) and (max-width: 1008px) { a.control_prev { top: 40%; } a.control_next { top: 40%; } ' + sliderId + ' { height: 419px !important; } ' + sliderId + ' ul li { height: 419px !important; } }',
      head = document.head || document.getElementsByTagName('head')[0],
      style = document.createElement('style');
 
@@ -101,17 +98,5 @@ IDMCarousel.prototype = {
 
      setCarouselContent(JSON.parse(carouselContent), id);
 
-  },
-
-  onValueChanged : function(newVal) {
-     //var ctx = this.context;
-     //console.log("carousel new value: " + newVal);
-     //if (newVal && !carouselContent) {
-     //   console.log("newVal");
-     //   carouselContent = newVal;
-     //   setCarouselContent(JSON.parse(carouselContent));
-     //}
   }
-
-
 };

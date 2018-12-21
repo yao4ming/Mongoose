@@ -2,7 +2,7 @@ a.control_prev, a.control_next {
   font-weight: bold;
   display: none;
   position: absolute;
-  top: 350px;
+  top: 40%;
   z-index: 999;
   padding: 2% 1.5%;
   width: auto;

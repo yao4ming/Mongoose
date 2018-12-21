@@ -1,4 +1,4 @@
-//code courtesy of zuraiz from codepen
+//initial code courtesy of zuraiz from codepen
 function initSlider(id) {
 
    jQuery(document).ready(function ($) {
@@ -51,42 +51,15 @@ function initSlider(id) {
          });
 
          var interval = setInterval(moveRight, 6000);
+
+         // add listener for visibility change
+         document.addEventListener("visibilitychange", function() {
+           if (document.visibilityState == 'visible') {
+             interval = setInterval(moveRight, 6000);
+           } else {
+             clearInterval(interval);
+           }
+         });
    });
 
-}
-
-function resizeElementWidth(element) {
-  var width = 0;
-  var body = window.document.body;
-  if (window.innerWidth) {
-      width = window.innerWidth;
-  } else if (body.parentElement.clientWidth) {
-      width = body.parentElement.clientWidth;
-  } else if (body && body.clientWidth) {
-      width = body.clientWidth;
-  }
-  //console.log("window width: " + width);
-  //console.log("slider width: " + element.width());
-  //element.width(width + "px");
-  element.width("auto");
-}
-
-var prevHeight = window.innerHeight;
-function resizeElementHeight(element) {
-  var height = 0;
-  var body = window.document.body;
-  if (window.innerHeight) {
-      height = window.innerHeight;
-  } else if (body.parentElement.clientHeight) {
-      height = body.parentElement.clientHeight;
-  } else if (body && body.clientHeight) {
-      height = body.clientHeight;
-  }
-  //console.log("window height: " + height);
-  //console.log("slider height: " + element.height());
-  //console.log(height - prevHeight);
-  var heightdifference = height - prevHeight;
-  element.height(element.height() + heightdifference);
-  //console.log("new height: " + element.height());
-  prevHeight = height;
 }
