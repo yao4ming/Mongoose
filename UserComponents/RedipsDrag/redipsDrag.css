@@ -1,0 +1,102 @@
+/* drag objects (DIV inside table cells) */
+.redips-drag {
+    cursor: move;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: white;
+    text-align: center;
+    font-size: 25pt; /* needed for cloned object */
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    /* round corners */
+    border-radius: 4px; /* Opera, Chrome */
+    -moz-border-radius: 4px; /* FF */
+}
+
+/* define main container (lime) */
+div.redips-drag-container {
+    border: 1px solid lime;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+ 
+ /* table styles */
+ div#redips-drag table {
+     background-color: #eee;
+     border-collapse: collapse;
+     /* margin: 10px; */
+     width: 100%;
+     height: 100%;
+ }
+
+/* left table container (red) */
+#left {
+    border: 1px solid red;
+    width: 150px;
+    height: 351px;
+    float: left;
+    margin-right: 13px;
+}
+
+/* right table container (blue) */
+#right {
+    border: 1px solid SteelBlue;
+    width: 422px;
+    padding-left: auto;
+    padding-right: 0px;
+    /* align div to the left */
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* left table cells */
+#table1 td {
+    border: 1px #DDC5B5 solid;
+    text-align: center;
+    font-size: 10pt;
+}
+
+/* right table cells */
+#table2 td {
+    border: 1px #DDC5B5 solid;
+    height: 50px;
+    text-align: center;
+    font-size: 10pt;
+    padding: 2px;
+}
+
+/* green objects */
+.green {
+    border: 2px solid #499B33;
+}
+
+/* orange objects */
+.orange {
+    border: 2px solid #BF6A30;
+}
+
+/* red objects */
+.red {
+    border: 2px solid #FF0000;
+}
+
+/* grey objects */
+.grey {
+    border: 2px solid #808080;
+}
+
+/* trash cell */
+.redips-trash {
+    height: 50px;
+    color: white;
+    background-color: SteelBlue;
+}
+
+/* set height for right container TD (contains DIV elements) */
+.rightContainer {
+    padding-top: 7px;
+    vertical-align: top;
+    height: 270px;
+}
