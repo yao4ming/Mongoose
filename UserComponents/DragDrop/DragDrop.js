@@ -81,6 +81,7 @@ function drop(ev, ctx) {
      var prevCell = document.getElementById(ev.dataTransfer.getData("previousCell_id"));
      var currentCell;
 
+     //make sure to set the currentCell to be td and not the span within
      if (ev.target.outerHTML.includes("td")) {
         currentCell = ev.target;
      } else if (ev.target.outerHTML.includes("span")) {
@@ -233,8 +234,8 @@ DragDrop.prototype = {
                  table1Cell.setAttribute("ondragover", "allowDrop(event)");
 
                  var table2Row = table2.insertRow(i);
+
                  var table2Cell0 = table2Row.insertCell(0);
-                 var table2Cell1 = table2Row.insertCell(1);
                  table2Cell0.id = "YARD0" + i +"-A";
                  table2Cell0.innerHTML = "<span>YARD0" + i +"-A</span>";
                  table2Cell0.setAttribute("ondragover", "allowDrop(event)");
@@ -242,6 +243,7 @@ DragDrop.prototype = {
                     drop(ev, ctx);
                  }
 
+                 var table2Cell1 = table2Row.insertCell(1);
                  table2Cell1.id = "YARD0" + i +"-B";
                  table2Cell1.innerHTML = "<span>YARD0" + i +"-B</span>";
                  table2Cell1.setAttribute("ondragover", "allowDrop(event)");
@@ -256,6 +258,7 @@ DragDrop.prototype = {
            //console.log(JSON.stringify(obj.input));
            //console.log(this.oldInputValue);
 
+           //if mongoose backend has updated, update UI
            if (JSON.stringify(obj.input) !== this.oldInputValue) {
               console.log("update grid");
 
@@ -270,7 +273,7 @@ DragDrop.prototype = {
                        //console.log(document.getElementById(previousLots[i].trailerCurrentLot));
 
                        //clear content of previous Lot cells
-                       REDIPS.drag.emptyCell(document.getElementById(previousLots[i].trailerCurrentLot));
+                       document.getElementById(previousLots[i].trailerCurrentLot).innerHTML = "";
 
                        //re-add Lot Id
                        document.getElementById(previousLots[i].trailerCurrentLot).innerHTML = '<span>' + previousLots[i].trailerCurrentLot + '</span>';
@@ -283,6 +286,7 @@ DragDrop.prototype = {
 
                  var cell = document.getElementById(obj.input[i].trailerCurrentLot);
 
+                 //contains span lot id
                  if (cell.children[0]) {
                       cell.children[0].style.display = "none";
                  }
@@ -296,19 +300,10 @@ DragDrop.prototype = {
                        '<i class="fa fa-calendar-check-o" style="font-size:24px;color:green; float: right;"></i>' +
                        '<span class="tooltiptext">ID: ' + obj.input[i].trailerKey + ', Name: ' + obj.input[i].trailerName + ', LotID: ' + obj.input[i].trailerCurrentLot + '</span>';
                  div.ondragstart = function(ev) {
-                     //console.log(this.parentElement);
                      drag(ev, this.parentElement.id);
                  }
 
                  cell.appendChild(div);
-
-                 /*cell.innerHTML += '<div id="' + obj.input[i].trailerKey + '" class="redips-drag grey" draggable="true" ondragstart="drag(event, ' + cell.id + ')">' +
-                       '<i class="fa fa-arrow-left" style="font-size:24px;color:black;float:left;"></i>' +
-                       '<i class="fa fa-clock-o" style="font-size:24px;color:red;"></i>' +
-                       '<i class="fa fa-calendar-check-o" style="font-size:24px;color:green; float: right;"></i>' +
-                       '<span class="tooltiptext">ID: ' + obj.input[i].trailerKey + ', Name: ' + obj.input[i].trailerName + ', LotID: ' + obj.input[i].trailerCurrentLot + '</span>' +
-                   '</div>';
-                */
               }
 
               this.oldInputValue = JSON.stringify(obj.input);
