@@ -1,236 +1,243 @@
-MG.app.UserComponent.define({
+.trailer {
 
-	name : "DragDrop",
+    position: relative;
 
-	factory : function (init, context) {
+    display: inline-block;
 
-		return new DragDrop(init, context);
+    background-color: darkgray !important;
 
-	}
+    box-shadow: 2px 4px 1px 1px;
 
-});
+    cursor: move;
 
+    margin: auto;
 
+    margin-bottom: 10px;
 
-DragDrop = function (init, context) {
+    text-align: center;
 
-	this.context = context;
+    font-size: 25pt; /* needed for cloned object */
 
-	this.id = guid();
+    width: 120px;
 
-   this.init = init;
+    height: 35px;
 
-   this.firstCall = true;
+    line-height: 35px;
 
-	if (typeof init == "string") {
+    /* round corners */
 
-		try {
+    border-radius: 4px; /* Opera, Chrome */
 
-			this.settings = JSON.parse(init);
-
-		} catch (e) {
-
-			// init failed
-
-		}
-
-	}
-
-};
-
-
-
-function guid() {
-
-  function s4() {
-
-    return Math.floor((1 + Math.random()) * 0x10000)
-
-      .toString(16)
-
-      .substring(1);
-
-  }
-
-  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-
-    s4() + '-' + s4() + s4() + s4();
+    -moz-border-radius: 4px; /* FF */
 
 }
 
-DragDrop.prototype = {
+.trailer .tooltiptext {
+   visibility: hidden;
+   font-size: 11px;
+   font-weight: bold;
+   width: 120px;
+   background-color: #555;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;
+   position: absolute;
+   z-index: 1;
+   bottom: 125%;
+   left: 50%;
+   margin-left: -60px;
+   opacity: 0;
+   transition: opacity 0.3s;
+}
 
+.trailer .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
+.trailer:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
-	getHtml : function(){
+/* define main container (lime) */
 
-      console.log("getHTML");
+div.table-container {
 
+    background: #eee;
 
+    border: 1px solid black;
 
-      var id = this.id;
+    width: 100%;
 
+    height: 100%;
 
+    padding: 10px;
 
-      return (
+}
 
-         '<div id="' + id + '" class="table-container">' +
 
-             '<div id="left">' +
 
-                 '<table id="table1">' +
+ /* table styles */
 
-                     '<colgroup>' +
+div.table-container table {
 
-                         '<col width="100"/>' +
+     background-color: #eee;
 
-                     '</colgroup>' +
+     /* border-collapse: collapse; */
 
-                     '<tbody>' +
+     /* margin: 10px; */
 
-                     '</tbody>' +
+     /* width: 100%; */
 
-                 '</table>' +
+     height: 100%;
 
-             '</div>' +
+ }
 
+#table1 {
+   border-collapse: collapse;
+   width: 100%;
+}
 
+#table2 {
 
-             '<div id="right">' +
+}
 
-                 '<table id="table2" align="right">' +
 
-                     '<colgroup>' +
+/* left table container (red) */
 
-                         '<col width="100"/>' +
+#left {
 
-                         '<col width="100"/>' +
+    /* border: 1px solid red; */
 
-                         '<col width="100"/>' +
+    width: 150px;
 
-                         '<col width="100"/>' +
+    height: 100%;
 
-                     '</colgroup>' +
+    float: left;
 
-                     '<tbody>' +
+    margin-right: 13px;
 
-                     '</tbody>' +
+}
 
-                 '</table>' +
 
-             '</div>' +
 
-         '</div>'
+/* right table container (blue) */
 
-         )
+#right {
 
-	},
+    /* border: 1px solid SteelBlue; */
 
+    width: auto;
 
+    height: 100%;
 
-	onFormReady : function(){
+    padding-left: auto;
 
-      console.log("onFormReady");
+    padding-right: 0px;
 
-      var ctx = this.context;
-      var id = this.id;
+    /* align div to the left */
 
-	},
+    margin-right: auto;
 
-   onValueChanged : function(newVal) {
+    overflow: hidden;
 
-     console.log("onValueChanged");
+}
 
-     var id = this.id;
-     var ctx = this.context;
 
-     var table1 = document.getElementById('table1').getElementsByTagName('tbody')[0];
-     var table2 = document.getElementById('table2').getElementsByTagName('tbody')[0];
 
-     if (newVal) {
+/* left table cells */
 
-         try {
+#table1 td {
 
-            if (this.firstCall) {
-               console.log("create table");
+    border-right-style: none !important;
 
-               //dynamically create table
-               var numRows = 12;
+    border: 1px black solid;
 
-               for (var i = 0; i < numRows; i++) {
-                  var table1Row = table1.insertRow(i);
-                  var table1Cell = table1Row.insertCell(0);
-                  table1Cell.id = "SHIPDOOR0" + i;
-                  table1Cell.innerHTML = "<span>SHIPDOOR0" + i + "</span>";
+    text-align: center;
 
-                  var table2Row = table2.insertRow(i);
-                  var table2Cell0 = table2Row.insertCell(0);
-                  var table2Cell1 = table2Row.insertCell(1);
-                  table2Cell0.id = "YARD0" + i +"-A";
-                  table2Cell0.innerHTML = "<span>YARD0" + i +"-A</span>";
-                  table2Cell1.id = "YARD0" + i +"-B";
-                  table2Cell1.innerHTML = "<span>YARD0" + i +"-B</span>";
-               }
-            }
+    font-size: 10pt;
 
-   			var obj = JSON.parse(newVal);
-            //console.log(JSON.stringify(obj.input));
-            //console.log(this.oldInputValue);
+    height: 50px;
 
-            if (JSON.stringify(obj.input) !== this.oldInputValue) {
-               console.log("update grid");
+}
 
-               if (!this.firstCall) {
-                  //unhide lot id of previously filled lots
-                  console.log(ctx.userComp.startValue);
-                  var previousLots = JSON.parse(ctx.userComp.startValue).output;
-                  console.log(previousLots);
 
-                  for (var i = 0; i < previousLots.length; i++) {
-                        //console.log(previousLots[i].trailerCurrentLot);
-                        //console.log(document.getElementById(previousLots[i].trailerCurrentLot));
 
-                        //clear content of previous Lot cells
-                        REDIPS.drag.emptyCell(document.getElementById(previousLots[i].trailerCurrentLot));
+/* right table cells */
 
-                        //re-add Lot Id
-                        document.getElementById(previousLots[i].trailerCurrentLot).innerHTML = '<span>' + previousLots[i].trailerCurrentLot + '</span>';
+#table2 td {
 
-                  }
-               }
+    border: 1px black solid;
 
-               //populate table
-               for (var i = 0; i < obj.input.length; i++) {
+    width: 130px;
 
-                  var cell = document.getElementById(obj.input[i].trailerCurrentLot);
+    height: 50px;
 
-                  if (cell.children[0]) {
-                       cell.children[0].style.display = "none";
-                  }
+    text-align: center;
 
-                  cell.innerHTML += '<div id="' + obj.input[i].trailerKey + '" class="redips-drag grey">' +
-                        '<i class="fa fa-arrow-left" style="font-size:24px;color:black;float:left;"></i>' +
-                        '<i class="fa fa-clock-o" style="font-size:24px;color:red;"></i>' +
-                        '<i class="fa fa-calendar-check-o" style="font-size:24px;color:green; float: right;"></i>' +
-                        '<span class="tooltiptext">ID: ' + obj.input[i].trailerKey + ', Name: ' + obj.input[i].trailerName + ', LotID: ' + obj.input[i].trailerCurrentLot + '</span>' +
-                    '</div>';
-               }
+    font-size: 10pt;
 
-               this.oldInputValue = JSON.stringify(obj.input);
+    padding: 2px;
 
-               initRedips(table1, table2, ctx, id);
-            } 
+}
 
-            this.firstCall = false;
 
-   		} catch (e) {
 
-   			console.log(e);
+/* green objects */
 
-   		}
+.green {
 
-      }
+    border: 2px solid #499B33;
 
-   }
+}
 
-};
+
+
+/* orange objects */
+
+.orange {
+
+    border: 2px solid #BF6A30;
+
+}
+
+
+
+/* red objects */
+
+.red {
+
+    border: 2px solid #FF0000;
+
+}
+
+
+
+/* grey objects */
+
+.grey {
+
+    border: 2px solid #808080;
+
+}
+
+
+/* set height for right container TD (contains DIV elements) */
+
+.rightContainer {
+
+    padding-top: 7px;
+
+    vertical-align: top;
+
+    height: 270px;
+
+}
