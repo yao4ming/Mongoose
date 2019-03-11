@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormsAndObjectsExport Version="010000">
+   <Forms Type="1">
+      <Form Name="DragDropYJ" Scope="0" ScopeName="[NULL]">
+         <Caption />
+         <Type>1</Type>
+         <StandardOperations>1019</StandardOperations>
+         <Flags>1048584</Flags>
+         <Height>50</Height>
+         <LeftPos>0</LeftPos>
+         <TopPos>0</TopPos>
+         <Width>150</Width>
+         <HelpContextID>-1</HelpContextID>
+         <PaneZeroSize>0</PaneZeroSize>
+         <PrimaryDataSource>Yard_TrlDetails( OBJNAME(Yard_TrlDetails) )</PrimaryDataSource>
+         <MasterDeviceID>0</MasterDeviceID>
+         <Components>
+            <Component Name="button1">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>2</TabOrder>
+               <TopPos>45.7058823529412</TopPos>
+               <LeftPos>152.625</LeftPos>
+               <Height>3.23529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>11.125</Width>
+               <Caption>Update Component</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>updateComponent</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>True</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Update Component</EffectiveCaption>
+            </Component>
+            <Component Name="flexLayout1">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>12</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>50</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>384</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 8; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0)</LayoutAttributes>
+            </Component>
+            <Component Name="grid1">
+               <DeviceID>-1</DeviceID>
+               <Type>14</Type>
+               <TabOrder>3</TabOrder>
+               <TopPos>42</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>8</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout1</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>objects</DataSource>
+               <Binding>3</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="gridColumn1">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>4</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>5.88235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>grid1</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.TrlKey</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTrlKey</EffectiveCaption>
+            </Component>
+            <Component Name="gridColumn2">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>5</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>5.88235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>grid1</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <DataSource>object.TrlName</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTrlName</EffectiveCaption>
+            </Component>
+            <Component Name="gridColumn3">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>6</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>5.88235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>16.875</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>grid1</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <DataSource>object.TrlLotID</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTrailerLotID</EffectiveCaption>
+            </Component>
+            <Component Name="gridColumn4">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>7</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>5.88235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>22.125</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>grid1</ContainerName>
+               <ContainerSequence>3</ContainerSequence>
+               <DataSource>object.TrlServiceStatus</DataSource>
+               <Binding>1</Binding>
+               <SelectionEvent>updateComponent</SelectionEvent>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTrlServiceStatus</EffectiveCaption>
+            </Component>
+            <Component Name="gridColumn5">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>8</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>5.88235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>24.75</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>grid1</ContainerName>
+               <ContainerSequence>4</ContainerSequence>
+               <DataSource>object.TrlServiceTime</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTrlServiceTime</EffectiveCaption>
+            </Component>
+            <Component Name="gridColumn6">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>9</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>5.88235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>18.875</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>grid1</ContainerName>
+               <ContainerSequence>5</ContainerSequence>
+               <DataSource>object.TrlStatus</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTrlStatus</EffectiveCaption>
+            </Component>
+            <Component Name="gridColumn7">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>10</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>5.88235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>28.625</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>grid1</ContainerName>
+               <ContainerSequence>6</ContainerSequence>
+               <DataSource>object.TrlTypeStatus</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTrlTypeStatus</EffectiveCaption>
+            </Component>
+            <Component Name="multiLineEdit1">
+               <DeviceID>-1</DeviceID>
+               <Type>18</Type>
+               <TabOrder>1</TabOrder>
+               <TopPos>35.6470588235294</TopPos>
+               <LeftPos>152.25</LeftPos>
+               <Height>8.35294117647059</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.875</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varRedips</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>True</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="userComponent1">
+               <DeviceID>-1</DeviceID>
+               <Type>51</Type>
+               <TabOrder>13</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>42</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout1</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <DataSource>variables.varRedips</DataSource>
+               <Binding>6</Binding>
+               <EventToGenerate>updateTable</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+         </Components>
+         <ActiveXComponents>
+            <ActiveXComponentProperty ComponentName="userComponent1">
+               <Properties>{"Name":"DragDrop","InitString":null,"Reserved":null}</Properties>
+            </ActiveXComponentProperty>
+         </ActiveXComponents>
+         <EventHandlers>
+            <EventHandler Name="StdFormRefresh" Sequence="0">
+               <ResponseType>28</ResponseType>
+               <Response>object</Response>
+            </EventHandler>
+            <EventHandler Name="StdFormRefresh" Sequence="1">
+               <ResponseType>35</ResponseType>
+               <Response>updateComponent()</Response>
+            </EventHandler>
+            <EventHandler Name="updateComponent" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>updateComponent()</Response>
+            </EventHandler>
+            <EventHandler Name="updateTable" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>updateTable()</Response>
+            </EventHandler>
+         </EventHandlers>
+         <Variables>
+            <Variable Name="InitialCommand">
+               <Value>Refresh</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+         </Variables>
+         <Script Language="Visual C#">
+            <ScriptLines>
+               <ScriptLine>//&lt;ref&gt;Newtonsoft.Json.dll&lt;/ref&gt;</ScriptLine>
+               <ScriptLine>using System;</ScriptLine>
+               <ScriptLine>using System.Collections.Generic;</ScriptLine>
+               <ScriptLine>using Mongoose.IDO.Protocol;</ScriptLine>
+               <ScriptLine>using Mongoose.Scripting;</ScriptLine>
+               <ScriptLine>using Newtonsoft.Json;</ScriptLine>
+               <ScriptLine>namespace Mongoose.FormScripts</ScriptLine>
+               <ScriptLine>{</ScriptLine>
+               <ScriptLine>   public class DragDropYJ : FormScript</ScriptLine>
+               <ScriptLine>   {   </ScriptLine>
+               <ScriptLine>      public class RedipsDrag {</ScriptLine>
+               <ScriptLine>         public List&lt;YardTrailerDetail&gt; input {get; set;}</ScriptLine>
+               <ScriptLine>         public List&lt;YardTrailerDetail&gt; output {get; set;}</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public class Input {</ScriptLine>
+               <ScriptLine>         public List&lt;YardTrailerDetail&gt; inputYardTrailerDetails;</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public class Output {</ScriptLine>
+               <ScriptLine>         public List&lt;YardTrailerDetail&gt; outputYardTrailerDetails;</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public class YardTrailerDetail {</ScriptLine>
+               <ScriptLine>         public string trailerKey;</ScriptLine>
+               <ScriptLine>         public string trailerName;</ScriptLine>
+               <ScriptLine>         public string trailerStatus;</ScriptLine>
+               <ScriptLine>         public string trailerCurrentLot;</ScriptLine>
+               <ScriptLine>         public string trailerServiceStatus;</ScriptLine>
+               <ScriptLine>         public string trailerTypeStatus;</ScriptLine>
+               <ScriptLine>         public string trailerServiceTime;</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public void updateComponent() {</ScriptLine>
+               <ScriptLine>         //Application.ShowMessage("update component");</ScriptLine>
+               <ScriptLine>         List&lt;YardTrailerDetail&gt; yardTrailerDetailsList = new List&lt;YardTrailerDetail&gt;();</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         ThisForm.PrimaryIDOCollection.First();</ScriptLine>
+               <ScriptLine>         for (int i = 0; i &lt; ThisForm.PrimaryIDOCollection.GetNumEntries() - 1; i++) {</ScriptLine>
+               <ScriptLine>            YardTrailerDetail yardTrailerDetail = new YardTrailerDetail();</ScriptLine>
+               <ScriptLine>            yardTrailerDetail.trailerKey = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("TrlKey");</ScriptLine>
+               <ScriptLine>            yardTrailerDetail.trailerName = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("TrlName");</ScriptLine>
+               <ScriptLine>            yardTrailerDetail.trailerStatus = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("TrlStatus");</ScriptLine>
+               <ScriptLine>            yardTrailerDetail.trailerCurrentLot = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("TrlLotID");</ScriptLine>
+               <ScriptLine>            yardTrailerDetail.trailerServiceStatus = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("TrlServiceStatus");</ScriptLine>
+               <ScriptLine>            yardTrailerDetail.trailerTypeStatus = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("TrlTypeStatus");</ScriptLine>
+               <ScriptLine>            yardTrailerDetail.trailerServiceTime = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("TrlServiceTime");</ScriptLine>
+               <ScriptLine>            yardTrailerDetailsList.Add(yardTrailerDetail);</ScriptLine>
+               <ScriptLine>            ThisForm.PrimaryIDOCollection.Next();</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         var root = new RedipsDrag() {</ScriptLine>
+               <ScriptLine>            input = yardTrailerDetailsList,</ScriptLine>
+               <ScriptLine>            output = yardTrailerDetailsList</ScriptLine>
+               <ScriptLine>         };</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         ThisForm.Variables("varRedips").Value = JsonConvert.SerializeObject(root, Formatting.Indented);</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public void updateTable() {</ScriptLine>
+               <ScriptLine>         RedipsDrag redipsDrag = JsonConvert.DeserializeObject&lt;RedipsDrag&gt;(ThisForm.Variables("varRedips").Value);</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         for (int i = 0; i &lt; redipsDrag.output.Count; i++) {</ScriptLine>
+               <ScriptLine>            LoadCollectionResponseData res = loadCollection(redipsDrag.output[i].trailerKey);  </ScriptLine>
+               <ScriptLine>            updateCollection(res, redipsDrag.output[i].trailerCurrentLot);</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         ThisForm.PrimaryIDOCollection.Refresh();</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public LoadCollectionResponseData loadCollection(string trailerKey) {</ScriptLine>
+               <ScriptLine>         // Collection Load</ScriptLine>
+               <ScriptLine>         LoadCollectionRequestData Load = new LoadCollectionRequestData();</ScriptLine>
+               <ScriptLine>         string PropertyValue = string.Empty;</ScriptLine>
+               <ScriptLine>         Load.IDOName = "Yard_TrlDetails";</ScriptLine>
+               <ScriptLine>         Load.PropertyList.Add("TrlKey");</ScriptLine>
+               <ScriptLine>         Load.PropertyList.Add("TrlLotID");</ScriptLine>
+               <ScriptLine>         Load.PropertyList.Add("RowPointer");</ScriptLine>
+               <ScriptLine>         Load.PropertyList.Add("RecordDate");</ScriptLine>
+               <ScriptLine>         Load.Filter = "TrlKey = '" + trailerKey + "'";</ScriptLine>
+               <ScriptLine>         Load.OrderBy = "";</ScriptLine>
+               <ScriptLine>         Load.RecordCap = 1;</ScriptLine>
+               <ScriptLine>         return IDOClient.LoadCollection(Load);</ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public void updateCollection(LoadCollectionResponseData res, string newLotId) {</ScriptLine>
+               <ScriptLine>         // Collection Update</ScriptLine>
+               <ScriptLine>         UpdateCollectionRequestData upd = new UpdateCollectionRequestData("Yard_TrlDetails");</ScriptLine>
+               <ScriptLine>         IDOUpdateItem itm = new IDOUpdateItem(UpdateAction.Update);</ScriptLine>
+               <ScriptLine>         itm.Properties.Add("RowPointer", res[0, "RowPointer"].Value, false);</ScriptLine>
+               <ScriptLine>         itm.Properties.Add("RecordDate", res[0, "RecordDate"].Value, false);</ScriptLine>
+               <ScriptLine>         itm.Properties.Add("TrlLotID", newLotId);</ScriptLine>
+               <ScriptLine>         upd.Items.Add(itm);</ScriptLine>
+               <ScriptLine>         IDOClient.UpdateCollection(upd);  </ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>   }</ScriptLine>
+               <ScriptLine>}</ScriptLine>
+            </ScriptLines>
+         </Script>
+      </Form>
+   </Forms>
+</FormsAndObjectsExport>
