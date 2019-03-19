@@ -1,20 +1,20 @@
-//code courtesy of Alexandre Laurent from codepen
+//code derived from codepen by Alexandre Laurent 
+function initAngular(id) {
+'use strict';
 
-"use strict";
-
-angular.module("ionicApp", ["ionic"])
-  .directive("selectWheel", function($ionicScrollDelegate, $ionicGesture, $window, $timeout) {
+angular.module('ionicApp'+id, ['ionic'])
+  .directive('selectWheel', function($ionicScrollDelegate, $ionicGesture, $window, $timeout) {
     return {
-      restrict: "E",
+      restrict: 'E',
       scope: {
-        itemHeight: "@",
-        amplitude: "@",
-        ngModel: "=",
-        options: "=",
-        index: "="
+        itemHeight: '@',
+        amplitude: '@',
+        ngModel: '=',
+        options: '=',
+        index: '='
       },
-      templateUrl: "select-wheel.html",
-      compile: function(element) {
+      templateUrl: 'select-wheel.html',
+       compile: function(element) {
         var id = "handle-" + Math.random();
         element.find("ion-scroll").attr("delegate-handle", id);
         return function(scope, element) {
@@ -24,7 +24,7 @@ angular.module("ionicApp", ["ionic"])
           scope.itemHeight = scope.itemHeight || 50;
           scope.amplitude = scope.amplitude || 5;
           scope.index = 0;
-
+          
           var resize = function() {
             scrollHandle.scrollTo(0, scope.index * scope.itemHeight);
           };
@@ -114,8 +114,20 @@ angular.module("ionicApp", ["ionic"])
     $urlRouterProvider.otherwise("/home");
 
   })
-  .controller("MainCtrl", function($scope) {
+  .controller("MainCtrl", function($scope, $ionicScrollDelegate) {
     $scope.data = {};
-    $scope.data.month = "Jan";
-    $scope.dataOptions = ["Jan", "Feb", "Mar"];
+    $scope.data.month = "";
+    //$scope.dataOptions = [];
+   
+    //$scope.scrollTo = function(index, newVal) {
+    //  $scope.index = index;
+    //  $scope.data.month = newVal;
+    //  $ionicScrollDelegate.scrollTo(0, index * 50, true);
+    //}
   });
+
+   angular.element(function() {
+      angular.bootstrap(document.getElementById('ionicApp'+id), ["ionicApp"+id]);
+   });
+}
+
