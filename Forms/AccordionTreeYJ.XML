@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <FormsAndObjectsExport Version="010000">
    <Forms Type="1">
       <Form Name="AccordionTreeYJ" Scope="0" ScopeName="[NULL]">
@@ -40,46 +40,24 @@
             <Component Name="button1">
                <DeviceID>-1</DeviceID>
                <Type>8</Type>
-               <TabOrder>19</TabOrder>
-               <TopPos>13.8235294117647</TopPos>
-               <LeftPos>46.5</LeftPos>
+               <TabOrder>51</TabOrder>
+               <TopPos>59.9117647058824</TopPos>
+               <LeftPos>3.125</LeftPos>
                <Height>3</Height>
                <ListHeight>0</ListHeight>
-               <Width>17</Width>
-               <Caption>HLTheme</Caption>
+               <Width>22</Width>
+               <Caption>Mongoosify Tokens</Caption>
                <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayout1</ContainerName>
+               <ContainerName />
                <ContainerSequence>0</ContainerSequence>
                <Binding>0</Binding>
-               <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl) THEMECLASS(HLThemeButton)</Post301Format>
-               <EffectiveCaption>HLTheme</EffectiveCaption>
-               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
-            </Component>
-            <Component Name="button2">
-               <DeviceID>-1</DeviceID>
-               <Type>8</Type>
-               <TabOrder>21</TabOrder>
-               <TopPos>17.7647058823529</TopPos>
-               <LeftPos>46.5</LeftPos>
-               <Height>3</Height>
-               <ListHeight>0</ListHeight>
-               <Width>17</Width>
-               <Caption>Default</Caption>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayout1</ContainerName>
-               <ContainerSequence>2</ContainerSequence>
-               <Binding>0</Binding>
+               <EventToGenerate>mongoosifyTokens</EventToGenerate>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
                <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <EffectiveCaption>Default</EffectiveCaption>
-               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+               <EffectiveCaption>Mongoosify Tokens</EffectiveCaption>
             </Component>
             <Component Name="button3">
                <DeviceID>-1</DeviceID>
@@ -107,8 +85,8 @@
                <DeviceID>-1</DeviceID>
                <Type>8</Type>
                <TabOrder>27</TabOrder>
-               <TopPos>53.3529411764706</TopPos>
-               <LeftPos>3</LeftPos>
+               <TopPos>52.9117647058824</TopPos>
+               <LeftPos>3.125</LeftPos>
                <Height>3</Height>
                <ListHeight>0</ListHeight>
                <Width>22</Width>
@@ -129,30 +107,30 @@
                <DeviceID>-1</DeviceID>
                <Type>8</Type>
                <TabOrder>29</TabOrder>
-               <TopPos>57</TopPos>
-               <LeftPos>3</LeftPos>
+               <TopPos>56.4117647058824</TopPos>
+               <LeftPos>3.125</LeftPos>
                <Height>3</Height>
                <ListHeight>0</ListHeight>
                <Width>22</Width>
-               <Caption>Insert Design Tokens</Caption>
+               <Caption>Parse Design Tokens</Caption>
                <MaxCharacters>0</MaxCharacters>
                <ContainerName />
                <ContainerSequence>0</ContainerSequence>
                <Binding>0</Binding>
-               <EventToGenerate>insertDesignTokens</EventToGenerate>
+               <EventToGenerate>parseDesignTokens</EventToGenerate>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <EffectiveCaption>Insert Design Tokens</EffectiveCaption>
+               <EffectiveCaption>Parse Design Tokens</EffectiveCaption>
             </Component>
             <Component Name="button6">
                <DeviceID>-1</DeviceID>
                <Type>8</Type>
                <TabOrder>41</TabOrder>
-               <TopPos>60.4117647058824</TopPos>
-               <LeftPos>3</LeftPos>
+               <TopPos>63.4117647058824</TopPos>
+               <LeftPos>3.125</LeftPos>
                <Height>3</Height>
                <ListHeight>0</ListHeight>
                <Width>22</Width>
@@ -168,29 +146,6 @@
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
                <EffectiveCaption>Clear Filter</EffectiveCaption>
-            </Component>
-            <Component Name="buttonDisable">
-               <DeviceID>-1</DeviceID>
-               <Type>8</Type>
-               <TabOrder>43</TabOrder>
-               <TopPos>33</TopPos>
-               <LeftPos>46.75</LeftPos>
-               <Height>2.11764705882353</Height>
-               <ListHeight>0</ListHeight>
-               <Width>16.375</Width>
-               <Caption>Disable</Caption>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayout1</ContainerName>
-               <ContainerSequence>6</ContainerSequence>
-               <Binding>0</Binding>
-               <EventToGenerate>disableButton</EventToGenerate>
-               <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl) THEMECLASS(HLThemeButton)</Post301Format>
-               <EffectiveCaption>Disable</EffectiveCaption>
-               <LayoutAttributes>INDEX(2) TARGET(UNKNOWN0)</LayoutAttributes>
             </Component>
             <Component Name="classGridCol">
                <DeviceID>-1</DeviceID>
@@ -214,90 +169,6 @@
                <MenuName>StdDefault</MenuName>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
                <EffectiveCaption>Class</EffectiveCaption>
-            </Component>
-            <Component Name="dropList1">
-               <DeviceID>-1</DeviceID>
-               <Type>3</Type>
-               <TabOrder>24</TabOrder>
-               <TopPos>0.470588235294118</TopPos>
-               <LeftPos>45</LeftPos>
-               <Height>2</Height>
-               <ListHeight>0</ListHeight>
-               <Width>20</Width>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayout1</ContainerName>
-               <ContainerSequence>4</ContainerSequence>
-               <Binding>0</Binding>
-               <ComboListSource>INLINE ENTRIES(hi,hey,hello,hola) DISPLAY(1) VALUE(1)</ComboListSource>
-               <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl) THEMECLASS(HLThemeDropList)</Post301Format>
-               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN2)</LayoutAttributes>
-            </Component>
-            <Component Name="dropList2">
-               <DeviceID>-1</DeviceID>
-               <Type>3</Type>
-               <TabOrder>25</TabOrder>
-               <TopPos>3.41176470588235</TopPos>
-               <LeftPos>45</LeftPos>
-               <Height>2</Height>
-               <ListHeight>0</ListHeight>
-               <Width>20</Width>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayout1</ContainerName>
-               <ContainerSequence>5</ContainerSequence>
-               <Binding>0</Binding>
-               <ComboListSource>INLINE ENTRIES(hi,hey,hello,hola) DISPLAY(1) VALUE(1)</ComboListSource>
-               <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN2)</LayoutAttributes>
-            </Component>
-            <Component Name="edit1">
-               <DeviceID>-1</DeviceID>
-               <Type>1</Type>
-               <TabOrder>20</TabOrder>
-               <TopPos>27.1176470588235</TopPos>
-               <LeftPos>43.5</LeftPos>
-               <Height>2</Height>
-               <ListHeight>0</ListHeight>
-               <Width>23</Width>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayout1</ContainerName>
-               <ContainerSequence>1</ContainerSequence>
-               <DataSource>variables.varInput</DataSource>
-               <Binding>6</Binding>
-               <Flags>0</Flags>
-               <ReadOnly>True</ReadOnly>
-               <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl) THEMECLASS(HLThemeInput)</Post301Format>
-               <LayoutAttributes>INDEX(2)</LayoutAttributes>
-            </Component>
-            <Component Name="edit2">
-               <DeviceID>-1</DeviceID>
-               <Type>1</Type>
-               <TabOrder>22</TabOrder>
-               <TopPos>30.0588235294118</TopPos>
-               <LeftPos>43.5</LeftPos>
-               <Height>2</Height>
-               <ListHeight>0</ListHeight>
-               <Width>23</Width>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayout1</ContainerName>
-               <ContainerSequence>3</ContainerSequence>
-               <DataSource>variables.varInput(INITIALVALUE(hello world))</DataSource>
-               <Binding>6</Binding>
-               <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <LayoutAttributes>INDEX(2)</LayoutAttributes>
             </Component>
             <Component Name="edit3">
                <DeviceID>-1</DeviceID>
@@ -342,26 +213,6 @@
                <Post301Format>AUTOIME(NoControl)</Post301Format>
                <EffectiveCaption>ElementType</EffectiveCaption>
             </Component>
-            <Component Name="flexLayout1">
-               <DeviceID>-1</DeviceID>
-               <Type>50</Type>
-               <TabOrder>18</TabOrder>
-               <TopPos>0</TopPos>
-               <LeftPos>40</LeftPos>
-               <Height>40</Height>
-               <ListHeight>0</ListHeight>
-               <Width>30</Width>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName>flexLayoutRoot</ContainerName>
-               <ContainerSequence>2</ContainerSequence>
-               <Binding>0</Binding>
-               <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <LayoutAttributes>TYPE(VerticalBox) REGION0(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Vertical; ALIGN: Center; PACK: Start; BORDER: Enable; EXPVIS: #V(varAccordion) = "HLThemeDropList"; MARGIN: 0,0.5,0,0.5; VISINDESIGN: True) REGION1(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Vertical; ALIGN: Center; PACK: Start; BORDER: Enable; EXPVIS: #V(varAccordion) = "HLThemeButton"; MARGIN: 0,0.5,0,0.5; VISINDESIGN: True) REGION2(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Vertical; ALIGN: Center; PACK: Start; BORDER: Enable; EXPVIS: #V(varAccordion) = "HLThemeInput"; MARGIN: 0,0.5,0,0.5; VISINDESIGN: True) INDEX(1)</LayoutAttributes>
-            </Component>
             <Component Name="flexLayoutRoot">
                <DeviceID>-1</DeviceID>
                <Type>50</Type>
@@ -380,17 +231,17 @@
                <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <LayoutAttributes>TYPE(HorizontalBox) REGION0(ID: UNKNOWN2; VALUE: 40; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN1; VALUE: 30; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0)</LayoutAttributes>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN2; VALUE: 40; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0)</LayoutAttributes>
             </Component>
             <Component Name="FormCollectionGrid">
                <DeviceID>-1</DeviceID>
                <Type>14</Type>
                <TabOrder>4</TabOrder>
                <TopPos>0</TopPos>
-               <LeftPos>70</LeftPos>
+               <LeftPos>40</LeftPos>
                <Height>40</Height>
                <ListHeight>0</ListHeight>
-               <Width>130</Width>
+               <Width>160</Width>
                <MaxCharacters>0</MaxCharacters>
                <ContainerName>flexLayoutRoot</ContainerName>
                <ContainerSequence>1</ContainerSequence>
@@ -401,7 +252,7 @@
                <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <LayoutAttributes>INDEX(2)</LayoutAttributes>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
             </Component>
             <Component Name="grid1">
                <DeviceID>-1</DeviceID>
@@ -459,7 +310,7 @@
                <Binding>8</Binding>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
@@ -735,7 +586,7 @@
                <LeftPos>0</LeftPos>
                <Height>5.88235294117647</Height>
                <ListHeight>0</ListHeight>
-               <Width>12.5</Width>
+               <Width>14</Width>
                <Caption>Inherited</Caption>
                <MaxCharacters>0</MaxCharacters>
                <ContainerName>FormCollectionGrid</ContainerName>
@@ -785,7 +636,7 @@
                <Binding>6</Binding>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
@@ -875,7 +726,7 @@
                <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
-               <LayoutAttributes>INDEX(0)</LayoutAttributes>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN2)</LayoutAttributes>
             </Component>
             <Component Name="valueGridCol">
                <DeviceID>-1</DeviceID>
@@ -892,7 +743,7 @@
                <DataSource>object.value</DataSource>
                <Binding>1</Binding>
                <Flags>0</Flags>
-               <ReadOnly>True</ReadOnly>
+               <ReadOnly>False</ReadOnly>
                <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <MenuName>StdDefault</MenuName>
@@ -922,13 +773,17 @@
                <ResponseType>35</ResponseType>
                <Response>filterDesignTokenMapper()</Response>
             </EventHandler>
-            <EventHandler Name="insertDesignTokens" Sequence="0">
-               <ResponseType>35</ResponseType>
-               <Response>parseDesignTokens()</Response>
-            </EventHandler>
             <EventHandler Name="mapDesignTokens" Sequence="0">
                <ResponseType>35</ResponseType>
                <Response>mapDesignTokens()</Response>
+            </EventHandler>
+            <EventHandler Name="mongoosifyTokens" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>mongoosifyTokens()</Response>
+            </EventHandler>
+            <EventHandler Name="parseDesignTokens" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>parseDesignTokens()</Response>
             </EventHandler>
             <EventHandler Name="parseMongooseThemeTemplates" Sequence="0">
                <ResponseType>35</ResponseType>
@@ -963,19 +818,19 @@
                <Description />
             </Variable>
             <Variable Name="fds_SC2">
-               <Value>OBJECT2( HLTheme( CA(RNCSDVIOG) OBJNAME(HLTheme) ORDERBY(name) LOCKMODE(Row) ) )</Value>
+               <Value>OBJECT2( HLTheme( CA(DIGVNORS) OBJNAME(HLTheme) ORDERBY(name) RECORDCAP(1000) LOCKMODE(Row) ) )</Value>
                <Value2 />
                <Value3 />
                <Description />
             </Variable>
             <Variable Name="fds_SC3">
-               <Value>OBJECT3( HLDarkTheme( CA(RNCSDVIOG) OBJNAME(HLDarkTheme) ORDERBY(name) LOCKMODE(Row) ) )</Value>
+               <Value>OBJECT3( HLDarkTheme( CA(DIGVNORS) OBJNAME(HLDarkTheme) ORDERBY(name) RECORDCAP(1000) LOCKMODE(Row) ) )</Value>
                <Value2 />
                <Value3 />
                <Description />
             </Variable>
             <Variable Name="fds_SC4">
-               <Value>OBJECT4( HLContrastTheme( CA(RNCSDVIOG) OBJNAME(HLContrastTheme) ORDERBY(name) LOCKMODE(Row) ) )</Value>
+               <Value>OBJECT4( HLContrastTheme( CA(DIGVNORS) OBJNAME(HLContrastTheme) ORDERBY(name) RECORDCAP(1000) LOCKMODE(Row) ) )</Value>
                <Value2 />
                <Value3 />
                <Description />
@@ -988,8 +843,8 @@
             </Variable>
             <Variable Name="varAccordion">
                <Value>~LIT~({"input":{"ApplicationFrame":{"Dialog":{"DialogControl":{"DialogButton":[],"DialogCheckBox":[],"DialogComboBox":[],"DialogDateCombo":[],"DialogDropList":[],"DialogEdit":[],"DialogGroupBox":[],"DialogHyperlink":[],"DialogList":[],"DialogNotebook":{"DialogNotebookTab":[]},"DialogRadioButton":[],"DialogStatic":[]},"DialogHeader":{}},"Explorer":{"ExplorerRoot":["ExplorerItem"]},"FormHeader":["FormTabHeader"],"MenuToolbar":["TopMenuItem","MenuItem"],"StatusBar":[],"IconToolbar":["AllToolbarButt</Value>
-               <Value2>ons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":[],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","ColumnHeader","RowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"RadioButton":[],"Static":[],"Tr</Value2>
-               <Value3>ee":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}},"output":{"ApplicationFrame":{"Dialog":{"DialogControl":{"DialogButton":[],"DialogCheckBox":[],"DialogComboBox":[],"DialogDateCombo":[],"DialogDropList":[],"DialogEdit":[],"DialogGroupBox":[],"DialogHyperlink":[],"DialogList":[],"DialogNotebook":{"DialogNotebookTab":[]},"DialogRadioButton":[],"DialogStatic":[]},"DialogHeader":{}},"Explorer":{"ExplorerRoot":["ExplorerItem"]},"FormHeader":["FormTabHeader"],"MenuToolbar":["TopMenuItem","MenuItem"],"StatusBar":[],"IconToolbar":["AllToolbarButtons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":[],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","ColumnHeader","RowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"RadioButton":[],"Static":[],"Tree":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}}})</Value3>
+               <Value2>ons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":[],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","ColumnHeader","RowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"RadioButton":[],"Static":["HLSt</Value2>
+               <Value3>atic"],"Tree":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}},"output":{"ApplicationFrame":{"Dialog":{"DialogControl":{"DialogButton":[],"DialogCheckBox":[],"DialogComboBox":[],"DialogDateCombo":[],"DialogDropList":[],"DialogEdit":[],"DialogGroupBox":[],"DialogHyperlink":[],"DialogList":[],"DialogNotebook":{"DialogNotebookTab":[]},"DialogRadioButton":[],"DialogStatic":[]},"DialogHeader":{}},"Explorer":{"ExplorerRoot":["ExplorerItem"]},"FormHeader":["FormTabHeader"],"MenuToolbar":["TopMenuItem","MenuItem"],"StatusBar":[],"IconToolbar":["AllToolbarButtons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":[],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","ColumnHeader","RowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"RadioButton":[],"Static":["HLStatic"],"Tree":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}}})</Value3>
                <Description />
             </Variable>
             <Variable Name="varMongooseThemeTemplates">
@@ -3752,6 +3607,8 @@
                <ScriptLine>         map.Add("DisabledBackground", "button-color-primary-disabled-background,checkbox-color-checked-disabled-background,input-color-disabled-background");</ScriptLine>
                <ScriptLine>         map.Add("DisabledForeground", "button-color-primary-initial-font,input-color-disabled-font");</ScriptLine>
                <ScriptLine>         map.Add("HoverBackground", "button-color-primary-hover-background,input-color-hover-background");</ScriptLine>
+               <ScriptLine>         map.Add("ActiveBackground", "input-color-focus-background");</ScriptLine>
+               <ScriptLine>         map.Add("ActiveForeground", "input-color-focus-font");</ScriptLine>
                <ScriptLine>         map.Add("FontFamily", "button-font-family,theme-font-family-base");</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         var strReader = new StringReader(ThisForm.Variables("varMongooseThemeTemplates").Value);</ScriptLine>
@@ -3781,6 +3638,7 @@
                <ScriptLine>            string tokenValue = getDesignTokenValue(elementType.ToLower(), attribute);</ScriptLine>
                <ScriptLine>            //Application.ShowMessage(tokenValue);</ScriptLine>
                <ScriptLine>            if (tokenValue == "") {</ScriptLine>
+               <ScriptLine>               //Application.ShowMessage("No design token for " + attribute);</ScriptLine>
                <ScriptLine>               designTokenMapperIdo.Next();</ScriptLine>
                <ScriptLine>               continue;  </ScriptLine>
                <ScriptLine>            }</ScriptLine>
@@ -3819,7 +3677,7 @@
                <ScriptLine>         string[] tokens = {};</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         if (!map.TryGetValue(attribute, out token)) {</ScriptLine>
-               <ScriptLine>            //Application.ShowMessage("Mapper for attribute " + attribute + " was not found");</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("Mapper for attribute " + attribute + " was not found");</ScriptLine>
                <ScriptLine>            return "";</ScriptLine>
                <ScriptLine>         }  </ScriptLine>
                <ScriptLine>         </ScriptLine>
@@ -3830,7 +3688,7 @@
                <ScriptLine>         if (token.Contains(",")) {</ScriptLine>
                <ScriptLine>            tokens = token.Split(',');</ScriptLine>
                <ScriptLine>            </ScriptLine>
-               <ScriptLine>            //find correct tokenName under category</ScriptLine>
+               <ScriptLine>            //FIND CORRECT TOKENNAME FORM MAP VALUES USING CATEGORY</ScriptLine>
                <ScriptLine>            for (int j = 0; j &lt; tokens.Length; j++) {</ScriptLine>
                <ScriptLine />
                <ScriptLine>               if (tokens[j].Contains(category) || tokens[j].Contains("theme")) {</ScriptLine>
@@ -3848,27 +3706,27 @@
                <ScriptLine>         } else if (ThisForm.Variables("varTheme").Value.Equals("HLContrastTheme")) {</ScriptLine>
                <ScriptLine>            return findDesignTokenValue(ThisForm.GetSecondaryIDOCollection(4), category, tokenName);</ScriptLine>
                <ScriptLine>         } else {</ScriptLine>
-               <ScriptLine>            Application.ShowMessage("Could not find design token value");</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("Theme needs to be either HLTheme, HLDarkTheme or HLContrastTheme to lookup tokens");</ScriptLine>
                <ScriptLine>            return "";  </ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public string findDesignTokenValue(IWSIDOCollection ido, string category, string tokenName) {</ScriptLine>
-               <ScriptLine>         Application.ShowMessage("find design token value");</ScriptLine>
+               <ScriptLine>         //Application.ShowMessage("find design token value");</ScriptLine>
                <ScriptLine>         //Application.ShowMessage(category);</ScriptLine>
-               <ScriptLine>         Application.ShowMessage(tokenName);</ScriptLine>
+               <ScriptLine>         //Application.ShowMessage(tokenName);</ScriptLine>
                <ScriptLine>         ido.First();</ScriptLine>
                <ScriptLine />
                <ScriptLine>         for (int i = 0; i &lt; ido.GetNumEntries() - 1; i++) {</ScriptLine>
-               <ScriptLine>            if (ido.GetCurrentObjectProperty("category").Equals(category) || ido.GetCurrentObjectProperty("category").Equals("theme")) {</ScriptLine>
+               <ScriptLine>            if (ido.GetCurrentObjectProperty("category").Equals(category) || ido.GetCurrentObjectProperty("category").Equals("input") || ido.GetCurrentObjectProperty("category").Equals("theme")) {</ScriptLine>
                <ScriptLine>               if (ido.GetCurrentObjectProperty("name").Contains(tokenName)) {</ScriptLine>
                <ScriptLine>                  //Application.ShowMessage("Return: " + ido.GetCurrentObjectProperty("name"));</ScriptLine>
                <ScriptLine>                  if (ido.GetCurrentObjectProperty("value").Equals("transparent")) {</ScriptLine>
                <ScriptLine>                     return ido.GetCurrentObjectProperty("name") + ":#00ffffff";</ScriptLine>
                <ScriptLine>                  } else if (ido.GetCurrentObjectProperty("value").Length == 7) {</ScriptLine>
                <ScriptLine>                     if (tokenName.Contains("disable")) {</ScriptLine>
-               <ScriptLine>                        Application.ShowMessage(tokenName);</ScriptLine>
+               <ScriptLine>                        Application.ShowMessage("disable " + tokenName);</ScriptLine>
                <ScriptLine>                        return ido.GetCurrentObjectProperty("name") + ":#7f" + ido.GetCurrentObjectProperty("value").Substring(1);</ScriptLine>
                <ScriptLine>                     } else {</ScriptLine>
                <ScriptLine>                        return ido.GetCurrentObjectProperty("name") + ":#ff" + ido.GetCurrentObjectProperty("value").Substring(1);</ScriptLine>
@@ -4002,7 +3860,7 @@
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
-               <ScriptLine>      public void propagateDesignTokenMapper(string elementType, string attribute, string designToken, string value) {</ScriptLine>
+               <ScriptLine>      public void propagateDesignTokenMapper(string elementType, string themeClass, string attribute, string designToken, string value) {</ScriptLine>
                <ScriptLine>         string ido = "DesignTokenMapper";</ScriptLine>
                <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
                <ScriptLine>         </ScriptLine>
@@ -4016,7 +3874,7 @@
                <ScriptLine>         Load.PropertyList.Add("inherited");</ScriptLine>
                <ScriptLine>         Load.PropertyList.Add("RecordDate");</ScriptLine>
                <ScriptLine>         Load.PropertyList.Add("RowPointer");</ScriptLine>
-               <ScriptLine>         Load.Filter = "theme = '" + theme + "' AND elementType = '" + elementType + "' AND attribute = '" + attribute + "'";</ScriptLine>
+               <ScriptLine>         Load.Filter = "theme = '" + theme + "' AND elementType = '" + elementType + "' AND class = '" + themeClass + "' AND attribute = '" + attribute + "'";</ScriptLine>
                <ScriptLine>         Load.OrderBy = "";</ScriptLine>
                <ScriptLine>         Load.RecordCap = 1;</ScriptLine>
                <ScriptLine>         LoadCollectionResponseData ColResponse = IDOClient.LoadCollection(Load);</ScriptLine>
@@ -4068,7 +3926,14 @@
                <ScriptLine>         string[] accordionValues = ThisForm.Variables("varAccordion").Value.Split(',');</ScriptLine>
                <ScriptLine>         string selectedAccordionValue = accordionValues[0];</ScriptLine>
                <ScriptLine>         </ScriptLine>
-               <ScriptLine>         designTokenMapperIdo.Filter = "theme = '" + theme + "' AND elementType = '" + selectedAccordionValue + "' AND class=''";</ScriptLine>
+               <ScriptLine>         string elementType = selectedAccordionValue;</ScriptLine>
+               <ScriptLine>         string hlClass = string.Empty;</ScriptLine>
+               <ScriptLine>         if (selectedAccordionValue.Contains("HL")) {</ScriptLine>
+               <ScriptLine>            elementType = selectedAccordionValue.Replace("HL", "");</ScriptLine>
+               <ScriptLine>            hlClass = selectedAccordionValue;</ScriptLine>
+               <ScriptLine>         } </ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         designTokenMapperIdo.Filter = "theme = '" + theme + "' AND elementType = '" + elementType + "' AND class='" + hlClass + "'";</ScriptLine>
                <ScriptLine>         designTokenMapperIdo.Refresh();</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>      }</ScriptLine>
@@ -4134,7 +3999,7 @@
                <ScriptLine>            </ScriptLine>
                <ScriptLine>            //PROPAGAGTE DESIGN TOKEN TO ALL CHILDREN ON THE MAPPER</ScriptLine>
                <ScriptLine>            for (int i = 1; i &lt; accordionValues.Length; i++) {</ScriptLine>
-               <ScriptLine>               propagateDesignTokenMapper(accordionValues[i], attr, designToken, value);</ScriptLine>
+               <ScriptLine>               propagateDesignTokenMapper(accordionValues[i], themeClass, attr, designToken, value);</ScriptLine>
                <ScriptLine>            }</ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
@@ -4154,17 +4019,41 @@
                <ScriptLine>         var serializer = new XmlSerializer(typeof(Tokens));</ScriptLine>
                <ScriptLine>         Tokens tokens = (Tokens) serializer.Deserialize(strReader);</ScriptLine>
                <ScriptLine />
-               <ScriptLine>         int index = 2;</ScriptLine>
+               <ScriptLine>         int index = 0;</ScriptLine>
+               <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
+               <ScriptLine>         if (theme.Equals("HLTheme")) {</ScriptLine>
+               <ScriptLine>            index = 2;</ScriptLine>
+               <ScriptLine>         } else if (theme.Equals("HLDarkTheme")) {</ScriptLine>
+               <ScriptLine>            index = 3;</ScriptLine>
+               <ScriptLine>         } else if (theme.Equals("HLContrastTheme")) {</ScriptLine>
+               <ScriptLine>            index = 4;</ScriptLine>
+               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("Cannot parse design token if theme is not HLTheme, HLDarkTheme or HLContrastTheme");  </ScriptLine>
+               <ScriptLine>            return;</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).First();</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         //DELETE OLD DESIGN TOKENS</ScriptLine>
+               <ScriptLine>         if (!ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("name").Equals("")) {</ScriptLine>
+               <ScriptLine>            for (int i = 0; i &lt; ThisForm.GetSecondaryIDOCollection(index).GetNumEntries() - 1; i++) {</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).Delete();</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).Next();</ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).Save();</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         //INSERT NEW DESIGN TOKENS</ScriptLine>
                <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).First();</ScriptLine>
                <ScriptLine>         for (int i = 0; i &lt; tokens.token.Length; i++) {</ScriptLine>
-               <ScriptLine />
                <ScriptLine>            Token token = tokens.token[i];</ScriptLine>
                <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).New();</ScriptLine>
                <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("name", token.name);</ScriptLine>
-               <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("category", token.category); </ScriptLine>
+               <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("category", token.category);</ScriptLine>
                <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("type", token.type); </ScriptLine>
                <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("value", token.value);</ScriptLine>
                <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Save();</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public void deleteDesignTokens() {</ScriptLine>
@@ -4188,16 +4077,47 @@
                <ScriptLine>         designTokenMapperIdo.Save();</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
-               <ScriptLine>      public void disableButton() {</ScriptLine>
-               <ScriptLine>         if (ThisForm.Components["buttonDisable"].Caption.Equals("Disable")) {</ScriptLine>
-               <ScriptLine>            ThisForm.Components["buttonDisable"].Caption = "Enable";</ScriptLine>
-               <ScriptLine>            ThisForm.Components["edit1"].Enabled = false;</ScriptLine>
-               <ScriptLine>            ThisForm.Components["edit2"].Enabled = false;</ScriptLine>
+               <ScriptLine>      public void mongoosifyTokens() {</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         int index = 0;</ScriptLine>
+               <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         //FIND CORRECT IDO INDEX THAT MATCHES THEME</ScriptLine>
+               <ScriptLine>         if (theme.Equals("HLTheme")) {</ScriptLine>
+               <ScriptLine>            index = 2;</ScriptLine>
+               <ScriptLine>         } else if (theme.Equals("HLDarkTheme")) {</ScriptLine>
+               <ScriptLine>            index = 3;</ScriptLine>
+               <ScriptLine>         } else if (theme.Equals("HLContrastTheme")) {</ScriptLine>
+               <ScriptLine>            index = 4;</ScriptLine>
                <ScriptLine>         } else {</ScriptLine>
-               <ScriptLine>            ThisForm.Components["buttonDisable"].Caption = "Disable";</ScriptLine>
-               <ScriptLine>            ThisForm.Components["edit1"].Enabled = true;  </ScriptLine>
-               <ScriptLine>            ThisForm.Components["edit2"].Enabled = true;  </ScriptLine>
+               <ScriptLine>            Application.ShowMessage("Cannot parse design token if theme is not HLTheme, HLDarkTheme or HLContrastTheme");  </ScriptLine>
+               <ScriptLine>            return;</ScriptLine>
                <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).First();</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         //CHANGE CATEGORY TO CORRESPONDING MONGOOSE COMPONENTS</ScriptLine>
+               <ScriptLine>         for (int i = 0; i &lt; ThisForm.GetSecondaryIDOCollection(index).GetNumEntries() - 1; i++) {</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //INPUT -&gt; EDIT</ScriptLine>
+               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("input")) {</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("category", "edit");  </ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //LABEL -&gt; STATIC</ScriptLine>
+               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("label")) {</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("category", "static");  </ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //DROPDOWN -&gt; DROPLIST</ScriptLine>
+               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("dropdown")) {</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("category", "droplist");  </ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).Next();</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Save();</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine />
@@ -4351,6 +4271,7 @@
             <ScriptLine>         Load.PropertyList.Add("value");</ScriptLine>
             <ScriptLine>         Load.Filter = "category LIKE '" + elementType + "'";</ScriptLine>
             <ScriptLine>         Load.OrderBy = "name";</ScriptLine>
+            <ScriptLine>         Load.RecordCap = 1000;</ScriptLine>
             <ScriptLine>         return IDOClient.LoadCollection(Load);</ScriptLine>
             <ScriptLine>      }</ScriptLine>
             <ScriptLine>   }</ScriptLine>
