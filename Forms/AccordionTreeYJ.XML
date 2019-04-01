@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <FormsAndObjectsExport Version="010000">
    <Forms Type="1">
       <Form Name="AccordionTreeYJ" Scope="0" ScopeName="[NULL]">
@@ -170,6 +170,25 @@
                <Post301Format>AUTOIME(NoControl)</Post301Format>
                <EffectiveCaption>Class</EffectiveCaption>
             </Component>
+            <Component Name="edit1">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>53</TabOrder>
+               <TopPos>40.5294117647059</TopPos>
+               <LeftPos>45.5</LeftPos>
+               <Height>2.35294117647059</Height>
+               <ListHeight>0</ListHeight>
+               <Width>25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
             <Component Name="edit3">
                <DeviceID>-1</DeviceID>
                <Type>1</Type>
@@ -185,8 +204,8 @@
                <DataSource>variables.varTheme(INITIALVALUE(CURTHEME()))</DataSource>
                <Binding>6</Binding>
                <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
@@ -270,7 +289,7 @@
                <Binding>8</Binding>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
@@ -290,7 +309,7 @@
                <Binding>8</Binding>
                <Flags>0</Flags>
                <ReadOnly>True</ReadOnly>
-               <Hidden>True</Hidden>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
@@ -302,7 +321,7 @@
                <LeftPos>31.25</LeftPos>
                <Height>17.1176470588235</Height>
                <ListHeight>0</ListHeight>
-               <Width>50.25</Width>
+               <Width>66.75</Width>
                <MaxCharacters>0</MaxCharacters>
                <ContainerName />
                <ContainerSequence>0</ContainerSequence>
@@ -564,7 +583,7 @@
                <LeftPos>0</LeftPos>
                <Height>5.88235294117647</Height>
                <ListHeight>0</ListHeight>
-               <Width>12.5</Width>
+               <Width>20</Width>
                <Caption>name</Caption>
                <MaxCharacters>0</MaxCharacters>
                <ContainerName>grid3</ContainerName>
@@ -624,8 +643,8 @@
                <DeviceID>-1</DeviceID>
                <Type>18</Type>
                <TabOrder>28</TabOrder>
-               <TopPos>43.4705882352941</TopPos>
-               <LeftPos>84.875</LeftPos>
+               <TopPos>43.2352941176471</TopPos>
+               <LeftPos>101</LeftPos>
                <Height>17.5294117647059</Height>
                <ListHeight>0</ListHeight>
                <Width>48.875</Width>
@@ -644,8 +663,8 @@
                <DeviceID>-1</DeviceID>
                <Type>18</Type>
                <TabOrder>44</TabOrder>
-               <TopPos>42.2941176470588</TopPos>
-               <LeftPos>139</LeftPos>
+               <TopPos>43.2352941176471</TopPos>
+               <LeftPos>151</LeftPos>
                <Height>17.8235294117647</Height>
                <ListHeight>0</ListHeight>
                <Width>48</Width>
@@ -659,6 +678,27 @@
                <Hidden>True</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="static1">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>52</TabOrder>
+               <TopPos>40.5294117647059</TopPos>
+               <LeftPos>33.625</LeftPos>
+               <Height>2.23529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>9.75</Width>
+               <Caption>hello world</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>hello world</EffectiveCaption>
             </Component>
             <Component Name="themeGridCol">
                <DeviceID>-1</DeviceID>
@@ -3699,17 +3739,13 @@
                <ScriptLine>            }</ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
-               <ScriptLine>         if (ThisForm.Variables("varTheme").Value.Equals("HLTheme")) {</ScriptLine>
-               <ScriptLine>            return findDesignTokenValue(ThisForm.GetSecondaryIDOCollection(2), category, tokenName);</ScriptLine>
-               <ScriptLine>         } else if (ThisForm.Variables("varTheme").Value.Equals("HLDarkTheme")) {</ScriptLine>
-               <ScriptLine>            return findDesignTokenValue(ThisForm.GetSecondaryIDOCollection(3), category, tokenName);</ScriptLine>
-               <ScriptLine>         } else if (ThisForm.Variables("varTheme").Value.Equals("HLContrastTheme")) {</ScriptLine>
-               <ScriptLine>            return findDesignTokenValue(ThisForm.GetSecondaryIDOCollection(4), category, tokenName);</ScriptLine>
-               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine>         int index = getIDOIndex();</ScriptLine>
+               <ScriptLine>         if (index == 0) {</ScriptLine>
                <ScriptLine>            Application.ShowMessage("Theme needs to be either HLTheme, HLDarkTheme or HLContrastTheme to lookup tokens");</ScriptLine>
-               <ScriptLine>            return "";  </ScriptLine>
+               <ScriptLine>            return ""; </ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
+               <ScriptLine>         return findDesignTokenValue(ThisForm.GetSecondaryIDOCollection(index), category, tokenName);</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public string findDesignTokenValue(IWSIDOCollection ido, string category, string tokenName) {</ScriptLine>
@@ -3719,21 +3755,10 @@
                <ScriptLine>         ido.First();</ScriptLine>
                <ScriptLine />
                <ScriptLine>         for (int i = 0; i &lt; ido.GetNumEntries() - 1; i++) {</ScriptLine>
-               <ScriptLine>            if (ido.GetCurrentObjectProperty("category").Equals(category) || ido.GetCurrentObjectProperty("category").Equals("input") || ido.GetCurrentObjectProperty("category").Equals("theme")) {</ScriptLine>
+               <ScriptLine>            if (ido.GetCurrentObjectProperty("category").Equals(category) || ido.GetCurrentObjectProperty("category").Equals("theme")) {</ScriptLine>
                <ScriptLine>               if (ido.GetCurrentObjectProperty("name").Contains(tokenName)) {</ScriptLine>
                <ScriptLine>                  //Application.ShowMessage("Return: " + ido.GetCurrentObjectProperty("name"));</ScriptLine>
-               <ScriptLine>                  if (ido.GetCurrentObjectProperty("value").Equals("transparent")) {</ScriptLine>
-               <ScriptLine>                     return ido.GetCurrentObjectProperty("name") + ":#00ffffff";</ScriptLine>
-               <ScriptLine>                  } else if (ido.GetCurrentObjectProperty("value").Length == 7) {</ScriptLine>
-               <ScriptLine>                     if (tokenName.Contains("disable")) {</ScriptLine>
-               <ScriptLine>                        Application.ShowMessage("disable " + tokenName);</ScriptLine>
-               <ScriptLine>                        return ido.GetCurrentObjectProperty("name") + ":#7f" + ido.GetCurrentObjectProperty("value").Substring(1);</ScriptLine>
-               <ScriptLine>                     } else {</ScriptLine>
-               <ScriptLine>                        return ido.GetCurrentObjectProperty("name") + ":#ff" + ido.GetCurrentObjectProperty("value").Substring(1);</ScriptLine>
-               <ScriptLine>                     }</ScriptLine>
-               <ScriptLine>                  } else {</ScriptLine>
-               <ScriptLine>                     return ido.GetCurrentObjectProperty("name") + ":" + ido.GetCurrentObjectProperty("value");  </ScriptLine>
-               <ScriptLine>                  }</ScriptLine>
+               <ScriptLine>                  return ido.GetCurrentObjectProperty("name") + ":" + ido.GetCurrentObjectProperty("value");</ScriptLine>
                <ScriptLine>               }</ScriptLine>
                <ScriptLine>            } </ScriptLine>
                <ScriptLine>            </ScriptLine>
@@ -3980,13 +4005,7 @@
                <ScriptLine />
                <ScriptLine>            //MATCHING TOKEN FOUND</ScriptLine>
                <ScriptLine>            if (ColResponse.Items.Count == 1) {</ScriptLine>
-               <ScriptLine>               if (attr.Equals("Background") || attr.Equals("Foreground") || attr.Equals("DisabledForeground") || attr.Equals("HoverBackground") || attr.Equals("HoverForeground")) {</ScriptLine>
-               <ScriptLine>                  value = "#ff" + ColResponse[0, "value"].Value.Substring(1);</ScriptLine>
-               <ScriptLine>               } else if (attr.Equals("DisabledBackground")) {</ScriptLine>
-               <ScriptLine>                  value = "#7f" + ColResponse[0, "value"].Value.Substring(1);</ScriptLine>
-               <ScriptLine>               } else {</ScriptLine>
-               <ScriptLine>                  value = ColResponse[0, "value"].Value;</ScriptLine>
-               <ScriptLine>               }  </ScriptLine>
+               <ScriptLine>               value = ColResponse[0, "value"].Value;</ScriptLine>
                <ScriptLine>               designTokenMapperIdo.SetCurrentObjectPropertyPlusModifyRefresh("value", value);</ScriptLine>
                <ScriptLine>            } else {</ScriptLine>
                <ScriptLine>               Application.ShowMessage("No Matching design token");  </ScriptLine>
@@ -4019,15 +4038,8 @@
                <ScriptLine>         var serializer = new XmlSerializer(typeof(Tokens));</ScriptLine>
                <ScriptLine>         Tokens tokens = (Tokens) serializer.Deserialize(strReader);</ScriptLine>
                <ScriptLine />
-               <ScriptLine>         int index = 0;</ScriptLine>
-               <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
-               <ScriptLine>         if (theme.Equals("HLTheme")) {</ScriptLine>
-               <ScriptLine>            index = 2;</ScriptLine>
-               <ScriptLine>         } else if (theme.Equals("HLDarkTheme")) {</ScriptLine>
-               <ScriptLine>            index = 3;</ScriptLine>
-               <ScriptLine>         } else if (theme.Equals("HLContrastTheme")) {</ScriptLine>
-               <ScriptLine>            index = 4;</ScriptLine>
-               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine>         int index = getIDOIndex();</ScriptLine>
+               <ScriptLine>         if (index == 0) {</ScriptLine>
                <ScriptLine>            Application.ShowMessage("Cannot parse design token if theme is not HLTheme, HLDarkTheme or HLContrastTheme");  </ScriptLine>
                <ScriptLine>            return;</ScriptLine>
                <ScriptLine>         }</ScriptLine>
@@ -4078,27 +4090,22 @@
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public void mongoosifyTokens() {</ScriptLine>
-               <ScriptLine>         </ScriptLine>
-               <ScriptLine>         </ScriptLine>
-               <ScriptLine>         int index = 0;</ScriptLine>
-               <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
-               <ScriptLine>         </ScriptLine>
-               <ScriptLine>         //FIND CORRECT IDO INDEX THAT MATCHES THEME</ScriptLine>
-               <ScriptLine>         if (theme.Equals("HLTheme")) {</ScriptLine>
-               <ScriptLine>            index = 2;</ScriptLine>
-               <ScriptLine>         } else if (theme.Equals("HLDarkTheme")) {</ScriptLine>
-               <ScriptLine>            index = 3;</ScriptLine>
-               <ScriptLine>         } else if (theme.Equals("HLContrastTheme")) {</ScriptLine>
-               <ScriptLine>            index = 4;</ScriptLine>
-               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         int index = getIDOIndex();</ScriptLine>
+               <ScriptLine>         if (index == 0) {</ScriptLine>
                <ScriptLine>            Application.ShowMessage("Cannot parse design token if theme is not HLTheme, HLDarkTheme or HLContrastTheme");  </ScriptLine>
                <ScriptLine>            return;</ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).First();</ScriptLine>
                <ScriptLine>         </ScriptLine>
-               <ScriptLine>         //CHANGE CATEGORY TO CORRESPONDING MONGOOSE COMPONENTS</ScriptLine>
                <ScriptLine>         for (int i = 0; i &lt; ThisForm.GetSecondaryIDOCollection(index).GetNumEntries() - 1; i++) {</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //RGB -&gt; ARGB</ScriptLine>
+               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Contains("#") &amp;&amp; ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Length == 7) {</ScriptLine>
+               <ScriptLine>               string rgb = ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Substring(1);</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("value", "#ff" + rgb); </ScriptLine>
+               <ScriptLine>            }</ScriptLine>
                <ScriptLine>            </ScriptLine>
                <ScriptLine>            //INPUT -&gt; EDIT</ScriptLine>
                <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("input")) {</ScriptLine>
@@ -4114,11 +4121,33 @@
                <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("dropdown")) {</ScriptLine>
                <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("category", "droplist");  </ScriptLine>
                <ScriptLine>            }</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //PIXEL -&gt; POINT</ScriptLine>
+               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("theme") &amp;&amp; ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("type").Equals("size")) {</ScriptLine>
+               <ScriptLine>               string fontSizeInPixel = ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Replace("px", "");</ScriptLine>
+               <ScriptLine>               string fontSizeInPoint = (float.Parse(fontSizeInPixel) * 72 / 96).ToString();</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("value", fontSizeInPoint);  </ScriptLine>
+               <ScriptLine>            }</ScriptLine>
                <ScriptLine />
                <ScriptLine>            ThisForm.GetSecondaryIDOCollection(index).Next();</ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Save();</ScriptLine>
                <ScriptLine>         </ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public int getIDOIndex() {</ScriptLine>
+               <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         //FIND CORRECT IDO INDEX THAT MATCHES THEME</ScriptLine>
+               <ScriptLine>         if (theme.Equals("HLTheme")) {</ScriptLine>
+               <ScriptLine>            return 2;</ScriptLine>
+               <ScriptLine>         } else if (theme.Equals("HLDarkTheme")) {</ScriptLine>
+               <ScriptLine>            return 3;</ScriptLine>
+               <ScriptLine>         } else if (theme.Equals("HLContrastTheme")) {</ScriptLine>
+               <ScriptLine>            return 4;</ScriptLine>
+               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine>            return 0;</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine />
                <ScriptLine>      public void setAccordion() {</ScriptLine>
@@ -4153,7 +4182,6 @@
                <ScriptLine>            } else {</ScriptLine>
                <ScriptLine>               dictionary.Add(elementType, new List&lt;string&gt;{elementThemeClass});</ScriptLine>
                <ScriptLine>            }</ScriptLine>
-               <ScriptLine>            </ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         //SET ACCORDION TREE INPUT PROPERTY WITH DICTIONARY</ScriptLine>
@@ -4247,10 +4275,10 @@
             <ScriptLine>      public void Main()</ScriptLine>
             <ScriptLine>      {</ScriptLine>
             <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
-            <ScriptLine>         string elementType = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("ElementType");</ScriptLine>
+            <ScriptLine>         string elementType = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("elementType");</ScriptLine>
             <ScriptLine>         </ScriptLine>
-            <ScriptLine>         LoadCollectionResponseData res = loadCollection(theme, elementType);</ScriptLine>
-            <ScriptLine>         //Application.ShowMessage(elementType);</ScriptLine>
+            <ScriptLine>         LoadCollectionResponseData res = loadCollection(theme, elementType.ToLower());</ScriptLine>
+            <ScriptLine>         //Application.ShowMessage(elementType.ToLower());</ScriptLine>
             <ScriptLine>         //Application.ShowMessage(res.Items.Count.ToString());</ScriptLine>
             <ScriptLine>         if (res.Items.Count &lt; 1) {</ScriptLine>
             <ScriptLine>            //Application.ShowMessage("Not design token matches elementType " + elementType);</ScriptLine>
