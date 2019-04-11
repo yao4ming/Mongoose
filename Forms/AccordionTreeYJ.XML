@@ -59,6 +59,28 @@
                <Post301Format>AUTOIME(NoControl)</Post301Format>
                <EffectiveCaption>Mongoosify Tokens</EffectiveCaption>
             </Component>
+            <Component Name="button2">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>54</TabOrder>
+               <TopPos>63.1764705882353</TopPos>
+               <LeftPos>3.125</LeftPos>
+               <Height>3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>22</Width>
+               <Caption>Toggle Token Filter</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>toggleTokenFilter</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Toggle Token Filter</EffectiveCaption>
+            </Component>
             <Component Name="button3">
                <DeviceID>-1</DeviceID>
                <Type>8</Type>
@@ -129,8 +151,8 @@
                <DeviceID>-1</DeviceID>
                <Type>8</Type>
                <TabOrder>41</TabOrder>
-               <TopPos>63.4117647058824</TopPos>
-               <LeftPos>3.125</LeftPos>
+               <TopPos>66.4705882352941</TopPos>
+               <LeftPos>3</LeftPos>
                <Height>3</Height>
                <ListHeight>0</ListHeight>
                <Width>22</Width>
@@ -142,7 +164,7 @@
                <EventToGenerate>clearFilter</EventToGenerate>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
                <EffectiveCaption>Clear Filter</EffectiveCaption>
@@ -155,7 +177,7 @@
                <LeftPos>43.25</LeftPos>
                <Height>12.5</Height>
                <ListHeight>0</ListHeight>
-               <Width>16</Width>
+               <Width>18</Width>
                <Caption>Class</Caption>
                <MaxCharacters>0</MaxCharacters>
                <ContainerName>FormCollectionGrid</ContainerName>
@@ -182,7 +204,9 @@
                <MaxCharacters>0</MaxCharacters>
                <ContainerName />
                <ContainerSequence>0</ContainerSequence>
-               <Binding>0</Binding>
+               <DataSource>variables.varToggleTokenFilter(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <SelectionEvent>testFilter</SelectionEvent>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
                <Hidden>False</Hidden>
@@ -217,7 +241,7 @@
                <LeftPos>28.25</LeftPos>
                <Height>12.5</Height>
                <ListHeight>0</ListHeight>
-               <Width>15</Width>
+               <Width>17</Width>
                <Caption>ElementType</Caption>
                <MaxCharacters>0</MaxCharacters>
                <ContainerName>FormCollectionGrid</ContainerName>
@@ -277,8 +301,8 @@
                <DeviceID>-1</DeviceID>
                <Type>14</Type>
                <TabOrder>30</TabOrder>
-               <TopPos>63.5294117647059</TopPos>
-               <LeftPos>41.5</LeftPos>
+               <TopPos>62.3529411764706</TopPos>
+               <LeftPos>32.5</LeftPos>
                <Height>16.5882352941176</Height>
                <ListHeight>0</ListHeight>
                <Width>73.25</Width>
@@ -639,7 +663,27 @@
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
-            <Component Name="multiLineEdit2">
+            <Component Name="multiLineEdit3">
+               <DeviceID>-1</DeviceID>
+               <Type>18</Type>
+               <TabOrder>44</TabOrder>
+               <TopPos>43.2352941176471</TopPos>
+               <LeftPos>151.125</LeftPos>
+               <Height>17.8235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>48</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.varMongooseThemeTemplates</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>True</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="multiLineEditDesignTokens">
                <DeviceID>-1</DeviceID>
                <Type>18</Type>
                <TabOrder>28</TabOrder>
@@ -656,26 +700,6 @@
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
                <Hidden>False</Hidden>
-               <HelpContextID>0</HelpContextID>
-               <Post301Format>AUTOIME(NoControl)</Post301Format>
-            </Component>
-            <Component Name="multiLineEdit3">
-               <DeviceID>-1</DeviceID>
-               <Type>18</Type>
-               <TabOrder>44</TabOrder>
-               <TopPos>43.2352941176471</TopPos>
-               <LeftPos>151</LeftPos>
-               <Height>17.8235294117647</Height>
-               <ListHeight>0</ListHeight>
-               <Width>48</Width>
-               <MaxCharacters>0</MaxCharacters>
-               <ContainerName />
-               <ContainerSequence>0</ContainerSequence>
-               <DataSource>variables.varMongooseThemeTemplates</DataSource>
-               <Binding>6</Binding>
-               <Flags>0</Flags>
-               <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
@@ -737,7 +761,7 @@
                <DataSource>object.token</DataSource>
                <Binding>1</Binding>
                <SelectionEvent>tokenChange</SelectionEvent>
-               <ComboListSource>SCRIPT setDesignToken(AccordionTreeYJ, tokenGridCol) DISPLAY(1)</ComboListSource>
+               <ComboListSource>SCRIPT setDesignToken(AccordionTreeYJ, tokenGridCol, V(varToggleTokenFilter)) DISPLAY(1)</ComboListSource>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
                <Hidden>False</Hidden>
@@ -841,6 +865,10 @@
                <ResponseType>28</ResponseType>
                <Response>object4</Response>
             </EventHandler>
+            <EventHandler Name="toggleTokenFilter" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>toggleTokenFilter()</Response>
+            </EventHandler>
             <EventHandler Name="tokenChange" Sequence="0">
                <ResponseType>35</ResponseType>
                <Response>designTokenChange()</Response>
@@ -882,9 +910,9 @@
                <Description />
             </Variable>
             <Variable Name="varAccordion">
-               <Value>~LIT~({"input":{"ApplicationFrame":{"Dialog":{"DialogControl":{"DialogButton":[],"DialogCheckBox":[],"DialogComboBox":[],"DialogDateCombo":[],"DialogDropList":[],"DialogEdit":[],"DialogGroupBox":[],"DialogHyperlink":[],"DialogList":[],"DialogNotebook":{"DialogNotebookTab":[]},"DialogRadioButton":[],"DialogStatic":[]},"DialogHeader":{}},"Explorer":{"ExplorerRoot":["ExplorerItem"]},"FormHeader":["FormTabHeader"],"MenuToolbar":["TopMenuItem","MenuItem"],"StatusBar":[],"IconToolbar":["AllToolbarButt</Value>
-               <Value2>ons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":[],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","ColumnHeader","RowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"RadioButton":[],"Static":["HLSt</Value2>
-               <Value3>atic"],"Tree":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}},"output":{"ApplicationFrame":{"Dialog":{"DialogControl":{"DialogButton":[],"DialogCheckBox":[],"DialogComboBox":[],"DialogDateCombo":[],"DialogDropList":[],"DialogEdit":[],"DialogGroupBox":[],"DialogHyperlink":[],"DialogList":[],"DialogNotebook":{"DialogNotebookTab":[]},"DialogRadioButton":[],"DialogStatic":[]},"DialogHeader":{}},"Explorer":{"ExplorerRoot":["ExplorerItem"]},"FormHeader":["FormTabHeader"],"MenuToolbar":["TopMenuItem","MenuItem"],"StatusBar":[],"IconToolbar":["AllToolbarButtons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":[],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","ColumnHeader","RowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"RadioButton":[],"Static":["HLStatic"],"Tree":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}}})</Value3>
+               <Value>{"input":{"ApplicationFrame":{"Dialog":{"DialogControl":{"DialogButton":[],"DialogCheckBox":[],"DialogComboBox":[],"DialogDateCombo":[],"DialogDropList":[],"DialogEdit":[],"DialogGroupBox":[],"DialogHyperlink":[],"DialogList":[],"DialogNotebook":{"DialogNotebookTab":[]},"DialogRadioButton":[],"DialogStatic":[]},"DialogHeader":{}},"Explorer":{"ExplorerRoot":["ExplorerItem"]},"FormHeader":["FormTabHeader"],"MenuToolbar":["TopMenuItem","MenuItem"],"StatusBar":[],"IconToolbar":["AllToolbarButt</Value>
+               <Value2>ons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":["HLSecondaryButton"],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","GridColumnHeader","GridRowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"Radi</Value2>
+               <Value3>oButton":[],"Static":["HLStatic"],"Tree":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}},"output":{"ApplicationFrame":{"Dialog":{"DialogControl":{"DialogButton":[],"DialogCheckBox":[],"DialogComboBox":[],"DialogDateCombo":[],"DialogDropList":[],"DialogEdit":[],"DialogGroupBox":[],"DialogHyperlink":[],"DialogList":[],"DialogNotebook":{"DialogNotebookTab":[]},"DialogRadioButton":[],"DialogStatic":[]},"DialogHeader":{}},"Explorer":{"ExplorerRoot":["ExplorerItem"]},"FormHeader":["FormTabHeader"],"MenuToolbar":["TopMenuItem","MenuItem"],"StatusBar":[],"IconToolbar":["AllToolbarButtons"],"ToolTip":[]},"Form":{"FormComponent":{"Button":[],"Calendar":[],"Checkbox":[],"ComboBox":[],"CriticalNumber":[],"DataView":[],"DateCombo":[],"DropList":[],"Edit":[],"FlexLayout":["FlexLayoutAndRegionBorder","FlexLayoutBorder","FlexRegionBorder","FlexRegionBottomBorder","FlexRegionLeftBorder","FlexRegionRightBorder","FlexRegionTopBorder"],"Grid":["GridColumn","ColumnHeader","RowHeader"],"GroupBox":[],"HyperLinkButton":[],"Infocon":[],"List":[],"Notebook":[],"RadioButton":[],"Static":["HLStatic"],"Tree":[],"UserControl":[],"VerticalGrid":["VerticalGridElement","ElementHeader"]}}}}</Value3>
                <Description />
             </Variable>
             <Variable Name="varMongooseThemeTemplates">
@@ -3637,19 +3665,21 @@
                <ScriptLine>{</ScriptLine>
                <ScriptLine>   public class AccordionTreeYJ : FormScript</ScriptLine>
                <ScriptLine>   {</ScriptLine>
+               <ScriptLine />
                <ScriptLine>      public void mapDesignTokens() {</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         IWSIDOCollection designTokenMapperIdo = ThisForm.PrimaryIDOCollection;</ScriptLine>
                <ScriptLine>         string accordionValue = ThisForm.Variables("varAccordion").Value;</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         map.Add("Background", "button-color-primary-initial-background,input-color-initial-background");</ScriptLine>
-               <ScriptLine>         map.Add("Foreground", "button-color-primary-initial-font,dropdown-color-initial-font,input-color-initial-font");</ScriptLine>
+               <ScriptLine>         map.Add("Foreground", "button-color-primary-initial-font,checkbox-color-unchecked-initial-font,dropdown-color-initial-font,input-color-initial-font");</ScriptLine>
                <ScriptLine>         map.Add("DisabledBackground", "button-color-primary-disabled-background,checkbox-color-checked-disabled-background,input-color-disabled-background");</ScriptLine>
-               <ScriptLine>         map.Add("DisabledForeground", "button-color-primary-initial-font,input-color-disabled-font");</ScriptLine>
+               <ScriptLine>         map.Add("DisabledForeground", "button-color-primary-initial-font,checkbox-color-checked-disabled-font,input-color-disabled-font");</ScriptLine>
                <ScriptLine>         map.Add("HoverBackground", "button-color-primary-hover-background,input-color-hover-background");</ScriptLine>
                <ScriptLine>         map.Add("ActiveBackground", "input-color-focus-background");</ScriptLine>
                <ScriptLine>         map.Add("ActiveForeground", "input-color-focus-font");</ScriptLine>
                <ScriptLine>         map.Add("FontFamily", "button-font-family,theme-font-family-base");</ScriptLine>
+               <ScriptLine>         //map.Add("FontSize", "button-font-size, theme-size-font-sm, theme-size-font-md");</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         var strReader = new StringReader(ThisForm.Variables("varMongooseThemeTemplates").Value);</ScriptLine>
                <ScriptLine>         var serializer = new XmlSerializer(typeof(Styles));</ScriptLine>
@@ -3830,7 +3860,7 @@
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         if (ColResponse.Items.Count &gt; 0) {</ScriptLine>
                <ScriptLine>            //update  </ScriptLine>
-               <ScriptLine>            Application.ShowMessage("update " + ColResponse[0, "Name"].Value + " " + ColResponse[0, "Value"].Value + " to " + value);</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("update " + elementType + " " + ColResponse[0, "Name"].Value + " " + ColResponse[0, "Value"].Value + " to " + value);</ScriptLine>
                <ScriptLine>            </ScriptLine>
                <ScriptLine>            UpdateCollectionRequestData upd = new UpdateCollectionRequestData(ido);</ScriptLine>
                <ScriptLine>            IDOUpdateItem itm = new IDOUpdateItem(UpdateAction.Update);</ScriptLine>
@@ -3842,7 +3872,7 @@
                <ScriptLine>            IDOClient.UpdateCollection(upd);</ScriptLine>
                <ScriptLine>         } else {</ScriptLine>
                <ScriptLine>            //insert</ScriptLine>
-               <ScriptLine>            Application.ShowMessage("insert " + name + " " + value);</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("insert for " + elementType + " " + name + " " + value);</ScriptLine>
                <ScriptLine>            </ScriptLine>
                <ScriptLine>            UpdateCollectionRequestData upd = new UpdateCollectionRequestData(ido);</ScriptLine>
                <ScriptLine>            IDOUpdateItem itm = new IDOUpdateItem(UpdateAction.Insert);</ScriptLine>
@@ -3914,10 +3944,16 @@
                <ScriptLine>            itm.Properties.Add("RecordDate", ColResponse[0, "RecordDate"].Value, false);</ScriptLine>
                <ScriptLine>            itm.Properties.Add("RowPointer", ColResponse[0, "RowPointer"].Value, false);</ScriptLine>
                <ScriptLine />
-               <ScriptLine>            //IF VALUE WAS INHERITED, UPDATE</ScriptLine>
+               <ScriptLine>            //IF CURRENT VALUE WAS INHERITED, UPDATE WITH NEW INHERITED VALUE</ScriptLine>
                <ScriptLine>            if (ColResponse[0, "value"].Value == ColResponse[0, "inherited"].Value) {</ScriptLine>
+               <ScriptLine>               //Application.ShowMessage("VALUE WAS INHERITED update " + ColResponse[0, "elementType"].Value + " " + ColResponse[0, "attribute"].Value + " " + ColResponse[0, "value"].Value + " to " + value);</ScriptLine>
                <ScriptLine>               itm.Properties.Add("token", designToken);</ScriptLine>
                <ScriptLine>               itm.Properties.Add("value", value);</ScriptLine>
+               <ScriptLine>               </ScriptLine>
+               <ScriptLine>               //SET THEME ATTRIBUTE FOR CHILD</ScriptLine>
+               <ScriptLine>               if (!setThemeAttribute(elementType, themeClass, attribute, value)) {</ScriptLine>
+               <ScriptLine>                  Application.ShowMessage("Could not get theme attribute for " + elementType + " " + themeClass + " " + attribute + " with " + value);</ScriptLine>
+               <ScriptLine>               }</ScriptLine>
                <ScriptLine>            }</ScriptLine>
                <ScriptLine>            </ScriptLine>
                <ScriptLine>            upd.Items.Add(itm);</ScriptLine>
@@ -3933,6 +3969,7 @@
                <ScriptLine>            upd.Items.Add(itm);</ScriptLine>
                <ScriptLine>            IDOClient.UpdateCollection(upd);*/</ScriptLine>
                <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         </ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public void filterDesignTokenMapper() {</ScriptLine>
@@ -3951,16 +3988,14 @@
                <ScriptLine>         string[] accordionValues = ThisForm.Variables("varAccordion").Value.Split(',');</ScriptLine>
                <ScriptLine>         string selectedAccordionValue = accordionValues[0];</ScriptLine>
                <ScriptLine>         </ScriptLine>
-               <ScriptLine>         string elementType = selectedAccordionValue;</ScriptLine>
-               <ScriptLine>         string hlClass = string.Empty;</ScriptLine>
                <ScriptLine>         if (selectedAccordionValue.Contains("HL")) {</ScriptLine>
-               <ScriptLine>            elementType = selectedAccordionValue.Replace("HL", "");</ScriptLine>
-               <ScriptLine>            hlClass = selectedAccordionValue;</ScriptLine>
-               <ScriptLine>         } </ScriptLine>
+               <ScriptLine>            designTokenMapperIdo.Filter = "theme = '" + theme + "' AND class='" + selectedAccordionValue + "'";</ScriptLine>
+               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine>            designTokenMapperIdo.Filter = "theme = '" + theme + "' AND elementType = '" + selectedAccordionValue + "'";</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         //Application.ShowMessage("theme = '" + theme + "' AND elementType = '" + selectedAccordionValue + "' AND class='" + selectedAccordionValue + "'");</ScriptLine>
                <ScriptLine>         </ScriptLine>
-               <ScriptLine>         designTokenMapperIdo.Filter = "theme = '" + theme + "' AND elementType = '" + elementType + "' AND class='" + hlClass + "'";</ScriptLine>
-               <ScriptLine>         designTokenMapperIdo.Refresh();</ScriptLine>
-               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         designTokenMapperIdo.Refresh();  </ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public void clearFilter() {</ScriptLine>
@@ -3968,6 +4003,7 @@
                <ScriptLine>         IWSIDOCollection designTokenMapperIdo = ThisForm.PrimaryIDOCollection;</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         designTokenMapperIdo.Filter = "";</ScriptLine>
+               <ScriptLine>         designTokenMapperIdo.RecordCapOverride = 1000;</ScriptLine>
                <ScriptLine>         designTokenMapperIdo.Refresh();</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
@@ -4012,14 +4048,21 @@
                <ScriptLine>            }</ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine />
-               <ScriptLine>         if (setThemeAttribute(elementType, themeClass, attr, value)) {</ScriptLine>
+               <ScriptLine>         //SET THEME ATTRIBUTE FOR CURRENT ELEMENT</ScriptLine>
+               <ScriptLine>         bool themeAttributeModified = setThemeAttribute(elementType, themeClass, attr, value);</ScriptLine>
+               <ScriptLine>         if (themeAttributeModified) {</ScriptLine>
                <ScriptLine>            Application.ShowMessage("theme attributes set, propragate to children elements");</ScriptLine>
                <ScriptLine>            string[] accordionValues = ThisForm.Variables("varAccordion").Value.Split(',');</ScriptLine>
                <ScriptLine>            </ScriptLine>
-               <ScriptLine>            //PROPAGAGTE DESIGN TOKEN TO ALL CHILDREN ON THE MAPPER</ScriptLine>
-               <ScriptLine>            for (int i = 1; i &lt; accordionValues.Length; i++) {</ScriptLine>
-               <ScriptLine>               propagateDesignTokenMapper(accordionValues[i], themeClass, attr, designToken, value);</ScriptLine>
+               <ScriptLine>            //CURRENT ELEMENT IS NOT FORM</ScriptLine>
+               <ScriptLine>            if (!accordionValues[0].Equals("Form")) {</ScriptLine>
+               <ScriptLine>               </ScriptLine>
+               <ScriptLine>               //PROPAGAGTE DESIGN TOKEN TO ALL CHILDREN ON THE MAPPER</ScriptLine>
+               <ScriptLine>               for (int i = 1; i &lt; accordionValues.Length; i++) {</ScriptLine>
+               <ScriptLine>                  propagateDesignTokenMapper(accordionValues[i], themeClass, attr, designToken, value);</ScriptLine>
+               <ScriptLine>               }</ScriptLine>
                <ScriptLine>            }</ScriptLine>
+               <ScriptLine>            </ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         designTokenMapperIdo.Save();</ScriptLine>
@@ -4097,6 +4140,25 @@
                <ScriptLine>            return;</ScriptLine>
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         </ScriptLine>
+               <ScriptLine>         if (ThisForm.Components["multiLineEditDesignTokens"].Value.Equals("")) {</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("Import and Parse Design token file first before attempting to Mongoosify");  </ScriptLine>
+               <ScriptLine>            return;</ScriptLine>
+               <ScriptLine>         }</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         //NEEDS TO BE DONE BEFORE INITIAL LOOP TO GRAB ALPHAHEX VALUE</ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Filter = "name = 'theme-number-opacity-disabled'";</ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Refresh();</ScriptLine>
+               <ScriptLine>         string opacity = ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value");</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         //OPACITY = 0.5</ScriptLine>
+               <ScriptLine>         //0.5 * 100 = 50</ScriptLine>
+               <ScriptLine>         //(50 * 255) / 100 = 127 = 7F</ScriptLine>
+               <ScriptLine>         //EXAMPLE: 100% -&gt; 255 HEX</ScriptLine>
+               <ScriptLine>         int alpha = (int) ((float.Parse(opacity) * 100) * 255) / 100;</ScriptLine>
+               <ScriptLine>         string alphaHex = alpha.ToString("X").ToLower();</ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Filter = "";</ScriptLine>
+               <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Refresh();</ScriptLine>
+               <ScriptLine>         </ScriptLine>
                <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).First();</ScriptLine>
                <ScriptLine>         </ScriptLine>
                <ScriptLine>         for (int i = 0; i &lt; ThisForm.GetSecondaryIDOCollection(index).GetNumEntries() - 1; i++) {</ScriptLine>
@@ -4105,6 +4167,13 @@
                <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Contains("#") &amp;&amp; ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Length == 7) {</ScriptLine>
                <ScriptLine>               string rgb = ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Substring(1);</ScriptLine>
                <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("value", "#ff" + rgb); </ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //ALPHAHEX -&gt; DISABLEDALPHAHEX</ScriptLine>
+               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("name").Contains("disable") &amp;&amp; ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("type").Equals("color")</ScriptLine>
+               <ScriptLine>                  &amp;&amp; ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Contains("#")) {</ScriptLine>
+               <ScriptLine>               string rgb = ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Substring(3);</ScriptLine>
+               <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("value", "#" + alphaHex + rgb); </ScriptLine>
                <ScriptLine>            }</ScriptLine>
                <ScriptLine>            </ScriptLine>
                <ScriptLine>            //INPUT -&gt; EDIT</ScriptLine>
@@ -4123,7 +4192,9 @@
                <ScriptLine>            }</ScriptLine>
                <ScriptLine>            </ScriptLine>
                <ScriptLine>            //PIXEL -&gt; POINT</ScriptLine>
-               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("theme") &amp;&amp; ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("type").Equals("size")) {</ScriptLine>
+               <ScriptLine>            if (ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("category").Equals("theme") &amp;&amp; ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("type").Equals("size")</ScriptLine>
+               <ScriptLine>                  || ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("name").Equals("button-font-size") </ScriptLine>
+               <ScriptLine>                  || ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("name").Equals("dropdown-size-font")) {</ScriptLine>
                <ScriptLine>               string fontSizeInPixel = ThisForm.GetSecondaryIDOCollection(index).GetCurrentObjectProperty("value").Replace("px", "");</ScriptLine>
                <ScriptLine>               string fontSizeInPoint = (float.Parse(fontSizeInPixel) * 72 / 96).ToString();</ScriptLine>
                <ScriptLine>               ThisForm.GetSecondaryIDOCollection(index).SetCurrentObjectPropertyPlusModifyRefresh("value", fontSizeInPoint);  </ScriptLine>
@@ -4133,6 +4204,10 @@
                <ScriptLine>         }</ScriptLine>
                <ScriptLine>         ThisForm.GetSecondaryIDOCollection(index).Save();</ScriptLine>
                <ScriptLine>         </ScriptLine>
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public void toggleTokenFilter() {</ScriptLine>
+               <ScriptLine>         ThisForm.Variables("varToggleTokenFilter").Value = ThisForm.Variables("varToggleTokenFilter").Value.Equals("0") ? "1" : "0";  </ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public int getIDOIndex() {</ScriptLine>
@@ -4276,11 +4351,13 @@
             <ScriptLine>      {</ScriptLine>
             <ScriptLine>         string theme = ThisForm.Variables("varTheme").Value;</ScriptLine>
             <ScriptLine>         string elementType = ThisForm.PrimaryIDOCollection.GetCurrentObjectProperty("elementType");</ScriptLine>
+            <ScriptLine>         string clearTokenFilter = GetParameter(2);</ScriptLine>
             <ScriptLine>         </ScriptLine>
             <ScriptLine>         LoadCollectionResponseData res = loadCollection(theme, elementType.ToLower());</ScriptLine>
             <ScriptLine>         //Application.ShowMessage(elementType.ToLower());</ScriptLine>
             <ScriptLine>         //Application.ShowMessage(res.Items.Count.ToString());</ScriptLine>
-            <ScriptLine>         if (res.Items.Count &lt; 1) {</ScriptLine>
+            <ScriptLine>         //Application.ShowMessage(clearTokenFilter);</ScriptLine>
+            <ScriptLine>         if (res.Items.Count &lt; 1 || clearTokenFilter.Equals("1")) {</ScriptLine>
             <ScriptLine>            //Application.ShowMessage("Not design token matches elementType " + elementType);</ScriptLine>
             <ScriptLine>            res = loadCollection(theme, "%");</ScriptLine>
             <ScriptLine>         } </ScriptLine>
