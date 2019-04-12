@@ -1,0 +1,1890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormsAndObjectsExport Version="010000">
+   <Forms Type="1">
+      <Form Name="DesignTokenDemoYJ" Scope="0" ScopeName="[NULL]">
+         <Caption />
+         <Type>8</Type>
+         <StandardOperations>1019</StandardOperations>
+         <Flags>1049472</Flags>
+         <Height>120</Height>
+         <LeftPos>0</LeftPos>
+         <TopPos>0</TopPos>
+         <Width>160</Width>
+         <HelpContextID>-1</HelpContextID>
+         <PaneZeroSize>0</PaneZeroSize>
+         <PrimaryDataSource>HLTheme( OBJNAME(HLTheme) )</PrimaryDataSource>
+         <MasterDeviceID>0</MasterDeviceID>
+         <LayoutAttributes Encoded="1">RESPONSIVE({_x0D_
+  "breakpoints": [_x0D_
+    {_x0D_
+      "id": "16dc7d63-0ca7-401b-b65f-c23799dd49af",_x0D_
+      "name": "Mobile",_x0D_
+      "description": "Mobile _x05_small_x06_ breakpoint: Form Width &lt;= 640px",_x0D_
+      "maxWidth": 640,_x0D_
+      "components": [_x0D_
+        {_x0D_
+          "name": "flexlayoutPane_DesignTokenDemoYJ",_x0D_
+          "attrs": {_x0D_
+            "flex": {_x0D_
+              "Type": "HorizontalBox",_x0D_
+              "FlexRegions": [_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN2",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN0",_x0D_
+                  "Value": 60.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN1",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                }_x0D_
+              ]_x0D_
+            }_x0D_
+          }_x0D_
+        },_x0D_
+        {_x0D_
+          "name": "flexLayout6",_x0D_
+          "attrs": {_x0D_
+            "flex": {_x0D_
+              "Type": "VerticalBox",_x0D_
+              "FlexRegions": [_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN3",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN2",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN1",_x0D_
+                  "Value": 0.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN0",_x0D_
+                  "Value": 0.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                }_x0D_
+              ]_x0D_
+            }_x0D_
+          }_x0D_
+        },_x0D_
+        {_x0D_
+          "name": "flexLayout15",_x0D_
+          "attrs": {_x0D_
+            "flex": {_x0D_
+              "Type": "VerticalBox",_x0D_
+              "FlexRegions": [_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN3",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN2",_x0D_
+                  "Value": 0.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN1",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN0",_x0D_
+                  "Value": 0.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                }_x0D_
+              ]_x0D_
+            }_x0D_
+          }_x0D_
+        },_x0D_
+        {_x0D_
+          "name": "flexLayout17",_x0D_
+          "attrs": {_x0D_
+            "width": 37.5,_x0D_
+            "height": 13.0_x0D_
+          }_x0D_
+        },_x0D_
+        {_x0D_
+          "name": "flexLayout3",_x0D_
+          "attrs": {_x0D_
+            "width": 146.0,_x0D_
+            "height": 120.0,_x0D_
+            "flex": {_x0D_
+              "Type": "VerticalBox",_x0D_
+              "FlexRegions": [_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN4",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN3",_x0D_
+                  "Value": 18.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN6",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN5",_x0D_
+                  "Value": 18.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN7",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN2",_x0D_
+                  "Value": 20.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN8",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN0",_x0D_
+                  "Value": 15.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN9",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN10",_x0D_
+                  "Value": 15.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN11",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN13",_x0D_
+                  "Value": 15.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN12",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN1",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                }_x0D_
+              ]_x0D_
+            }_x0D_
+          }_x0D_
+        },_x0D_
+        {_x0D_
+          "name": "flexLayout10",_x0D_
+          "attrs": {_x0D_
+            "flex": {_x0D_
+              "Type": "VerticalBox",_x0D_
+              "FlexRegions": [_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN3",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN2",_x0D_
+                  "Value": 0.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN1",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN0",_x0D_
+                  "Value": 0.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                }_x0D_
+              ]_x0D_
+            }_x0D_
+          }_x0D_
+        }_x0D_
+      ]_x0D_
+    },_x0D_
+    {_x0D_
+      "id": "d89b94f3-9b61-4b44-ab99-34297f84d945",_x0D_
+      "name": "Tablet",_x0D_
+      "description": "Tablet _x05_medium_x06_ breakpoint: 641px &lt;= Form Width &lt;= 1007px",_x0D_
+      "minWidth": 641,_x0D_
+      "maxWidth": 1007,_x0D_
+      "components": [_x0D_
+        {_x0D_
+          "name": "flexlayoutPane_DesignTokenDemoYJ",_x0D_
+          "attrs": {_x0D_
+            "flex": {_x0D_
+              "Type": "HorizontalBox",_x0D_
+              "FlexRegions": [_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN2",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Horizontal",_x0D_
+                  "HAlign": "Top",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN0",_x0D_
+                  "Value": 110.0,_x0D_
+                  "Unit": "Char",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                },_x0D_
+                {_x0D_
+                  "Id": "UNKNOWN1",_x0D_
+                  "Value": 1.0,_x0D_
+                  "Unit": "Flex",_x0D_
+                  "Orientation": "Fill",_x0D_
+                  "Pack": "Start"_x0D_
+                }_x0D_
+              ]_x0D_
+            }_x0D_
+          }_x0D_
+        }_x0D_
+      ]_x0D_
+    },_x0D_
+    {_x0D_
+      "id": "75a2a781-5cbf-443c-a488-9dd340bec77a",_x0D_
+      "name": "Desktop",_x0D_
+      "description": "Desktop _x05_large_x06_ breakpoint: 1008px &lt;= Form Width",_x0D_
+      "minWidth": 1008_x0D_
+    }_x0D_
+  ]_x0D_
+})</LayoutAttributes>
+         <Components>
+            <Component Name="button1">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>13</TabOrder>
+               <TopPos>5</TopPos>
+               <LeftPos>25.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>15</Width>
+               <Caption>Action</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout7</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(HLSecondaryButton)</Post301Format>
+               <EffectiveCaption>Action</EffectiveCaption>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="button2">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>14</TabOrder>
+               <TopPos>8.47058823529412</TopPos>
+               <LeftPos>25.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>15</Width>
+               <Caption>Action</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout7</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(HLSecondaryButton)</Post301Format>
+               <EffectiveCaption>Action</EffectiveCaption>
+               <LayoutAttributes>INDEX(3) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="button3">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>17</TabOrder>
+               <TopPos>5</TopPos>
+               <LeftPos>11.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>15</Width>
+               <Caption>Action</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout8</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Action</EffectiveCaption>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="button4">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>18</TabOrder>
+               <TopPos>8.47058823529412</TopPos>
+               <LeftPos>11.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>15</Width>
+               <Caption>Action</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout8</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Action</EffectiveCaption>
+               <LayoutAttributes>INDEX(3) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="checkBox1">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>81</TabOrder>
+               <TopPos>133</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>20</Width>
+               <Caption>Unchecked</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout31</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Unchecked</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="checkBox2">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>82</TabOrder>
+               <TopPos>135</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Checked</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout31</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <DataSource>variables.varCheckBoxTest(INITIALVALUE(1))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Checked</EffectiveCaption>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="checkBox3">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>83</TabOrder>
+               <TopPos>137</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>20</Width>
+               <Caption>Disabled</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout31</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Disabled</EffectiveCaption>
+               <LayoutAttributes>INDEX(2) TARGET(UNKNOWN4)</LayoutAttributes>
+            </Component>
+            <Component Name="checkBox4">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>88</TabOrder>
+               <TopPos>150</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>30</Width>
+               <Caption>Select delivery method</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout34</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Select delivery method</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="dateCombo1">
+               <DeviceID>-1</DeviceID>
+               <Type>26</Type>
+               <TabOrder>69</TabOrder>
+               <TopPos>117</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>37.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout27</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301DataType>DATATYPE(DATE)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="dateCombo2">
+               <DeviceID>-1</DeviceID>
+               <Type>26</Type>
+               <TabOrder>71</TabOrder>
+               <TopPos>121.470588235294</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>37.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout27</ContainerName>
+               <ContainerSequence>3</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301DataType>DATATYPE(DATE)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(4) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="dropList1">
+               <DeviceID>-1</DeviceID>
+               <Type>3</Type>
+               <TabOrder>60</TabOrder>
+               <TopPos>100</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout22</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <ComboListSource>INLINE ENTRIES(NJ,NY,KY) DISPLAY(1) VALUE(1)</ComboListSource>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="edit4">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>39</TabOrder>
+               <TopPos>34</TopPos>
+               <LeftPos>44.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Field not editable</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout16</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>64</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Field not editable</EffectiveCaption>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="edit5">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>42</TabOrder>
+               <TopPos>34</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1.41176470588235</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Normal text field</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout17</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>64</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Normal text field</EffectiveCaption>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="edit6">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>44</TabOrder>
+               <TopPos>38.4705882352941</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout17</ContainerName>
+               <ContainerSequence>3</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>576</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(4) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout1">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>4</TabOrder>
+               <TopPos>2</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout3</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout10">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>20</TabOrder>
+               <TopPos>44</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>11</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout9</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN3; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN2)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout11">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>21</TabOrder>
+               <TopPos>44</TopPos>
+               <LeftPos>85.25</LeftPos>
+               <Height>11</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout10</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 6; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(2) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout12">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>25</TabOrder>
+               <TopPos>44</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>11</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout10</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN1; VALUE: 6; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout13">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>34</TabOrder>
+               <TopPos>19</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout3</ContainerName>
+               <ContainerSequence>3</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(3) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout14">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>35</TabOrder>
+               <TopPos>22</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout13</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout15">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>36</TabOrder>
+               <TopPos>24</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout14</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN3; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout16">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>37</TabOrder>
+               <TopPos>24</TopPos>
+               <LeftPos>85.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout15</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN3; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) INDEX(2) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout17">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>40</TabOrder>
+               <TopPos>24</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout15</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN3; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout18">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>48</TabOrder>
+               <TopPos>53</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout3</ContainerName>
+               <ContainerSequence>4</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(7) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout19">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>49</TabOrder>
+               <TopPos>64</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>12.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout18</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout2">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>5</TabOrder>
+               <TopPos>36</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout3</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(5) TARGET(UNKNOWN2)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout20">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>50</TabOrder>
+               <TopPos>66</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout19</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN3; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout21">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>51</TabOrder>
+               <TopPos>66</TopPos>
+               <LeftPos>85.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout20</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN3; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) INDEX(2) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout22">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>54</TabOrder>
+               <TopPos>66</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout20</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN3; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout23">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>61</TabOrder>
+               <TopPos>70</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>6.11764705882353</Height>
+               <ListHeight>0</ListHeight>
+               <Width>20</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout3</ContainerName>
+               <ContainerSequence>5</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) INDEX(9) TARGET(UNKNOWN10)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout24">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>62</TabOrder>
+               <TopPos>81</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>12.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout23</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout25">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>63</TabOrder>
+               <TopPos>83</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>10.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout24</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN3; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout26">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>64</TabOrder>
+               <TopPos>83</TopPos>
+               <LeftPos>87.25</LeftPos>
+               <Height>10.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>37.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout25</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN3; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) INDEX(2) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout27">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>65</TabOrder>
+               <TopPos>83</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>10.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>37.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout25</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN3; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout28">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>72</TabOrder>
+               <TopPos>98</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>12.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout4</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout29">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>73</TabOrder>
+               <TopPos>100</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>10.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout28</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN3; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout3">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>3</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>120.235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout5</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN4; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN3; VALUE: 15; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN6; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN5; VALUE: 15; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN7; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION5(ID: UNKNOWN2; VALUE: 15; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION6(ID: UNKNOWN8; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION7(ID: UNKNOWN0; VALUE: 15; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION8(ID: UNKNOWN9; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION9(ID: UNKNOWN10; VALUE: 15; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION10(ID: UNKNOWN11; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION11(ID: UNKNOWN13; VALUE: 15; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION12(ID: UNKNOWN12; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION13(ID: UNKNOWN1; VALUE: 15; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout30">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>84</TabOrder>
+               <TopPos>104</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>19.25</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout3</ContainerName>
+               <ContainerSequence>6</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(13) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout31">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>75</TabOrder>
+               <TopPos>100</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>10.3529411764706</Height>
+               <ListHeight>0</ListHeight>
+               <Width>37.5</Width>
+               <Caption>Unchecked</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout29</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Unchecked</EffectiveCaption>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN3; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout32">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>85</TabOrder>
+               <TopPos>115</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout30</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout33">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>86</TabOrder>
+               <TopPos>117</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout32</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN3; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout34">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>87</TabOrder>
+               <TopPos>117</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Unchecked</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout33</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Unchecked</EffectiveCaption>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN3; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout4">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>6</TabOrder>
+               <TopPos>87</TopPos>
+               <LeftPos>2</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout3</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(11) TARGET(UNKNOWN13)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout5">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>8</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>5.25</LeftPos>
+               <Height>120.235294117647</Height>
+               <ListHeight>0</ListHeight>
+               <Width>150</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexlayoutPane_DesignTokenDemoYJ</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable; MARGIN: 2,0,2,0) INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout6">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>9</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout1</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) THEMECLASS(FlexRegionBottomBorder)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN3; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN0; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout7">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>11</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>48.75</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout6</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN3; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) INDEX(1) TARGET(UNKNOWN2)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout8">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>15</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout6</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN6; VALUE: 1; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN5; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN4; VALUE: 1.5; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION3(ID: UNKNOWN3; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION4(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="flexLayout9">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>19</TabOrder>
+               <TopPos>42</TopPos>
+               <LeftPos>12.25</LeftPos>
+               <Height>15</Height>
+               <ListHeight>0</ListHeight>
+               <Width>146</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout2</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <LayoutAttributes>TYPE(VerticalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN1; VALUE: 2; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN0; VALUE: 2; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="flexlayoutPane_DesignTokenDemoYJ">
+               <DeviceID>-1</DeviceID>
+               <Type>50</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>120</Height>
+               <ListHeight>0</ListHeight>
+               <Width>160</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>386</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>TYPE(HorizontalBox) AUTOSIZE(0) REGION0(ID: UNKNOWN2; VALUE: 1fl; ORIEN: Horizontal; ALIGN: Top; PACK: Start; BORDER: Enable) REGION1(ID: UNKNOWN0; VALUE: 150; ORIEN: Fill; ; PACK: Start; BORDER: Enable) REGION2(ID: UNKNOWN1; VALUE: 1fl; ORIEN: Fill; ; PACK: Start; BORDER: Enable) INDEX(0)</LayoutAttributes>
+            </Component>
+            <Component Name="multiLineEdit1">
+               <DeviceID>-1</DeviceID>
+               <Type>18</Type>
+               <TabOrder>46</TabOrder>
+               <TopPos>63</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>6</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout12</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="multiLineEdit2">
+               <DeviceID>-1</DeviceID>
+               <Type>18</Type>
+               <TabOrder>47</TabOrder>
+               <TopPos>63</TopPos>
+               <LeftPos>44.75</LeftPos>
+               <Height>6</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout11</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <DataSource>variables.mgResponsiveBreakpoint</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="radioButton1">
+               <DeviceID>-1</DeviceID>
+               <Type>7</Type>
+               <TabOrder>92</TabOrder>
+               <TopPos>151</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Option one</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout34</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <DataSource>variables.varRadio</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Option one</EffectiveCaption>
+               <LayoutAttributes>INDEX(1) TARGET(UNKNOWN5)</LayoutAttributes>
+            </Component>
+            <Component Name="radioButton2">
+               <DeviceID>-1</DeviceID>
+               <Type>7</Type>
+               <TabOrder>93</TabOrder>
+               <TopPos>153</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Option two</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout34</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <DataSource>variables.varRadio</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Option two</EffectiveCaption>
+               <LayoutAttributes>INDEX(2) TARGET(UNKNOWN4)</LayoutAttributes>
+            </Component>
+            <Component Name="radioButton3">
+               <DeviceID>-1</DeviceID>
+               <Type>7</Type>
+               <TabOrder>94</TabOrder>
+               <TopPos>155</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Option three</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout34</ContainerName>
+               <ContainerSequence>3</ContainerSequence>
+               <DataSource>variables.varRadio</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Option three</EffectiveCaption>
+               <LayoutAttributes>INDEX(3) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="radioButton4">
+               <DeviceID>-1</DeviceID>
+               <Type>7</Type>
+               <TabOrder>95</TabOrder>
+               <TopPos>157</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>2</Height>
+               <ListHeight>0</ListHeight>
+               <Width>36.5</Width>
+               <Caption>Option four</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout34</ContainerName>
+               <ContainerSequence>4</ContainerSequence>
+               <DataSource>variables.varRadio</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <DefaultData>0</DefaultData>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301DataType>DEFAULTVALUE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Option four</EffectiveCaption>
+               <LayoutAttributes>INDEX(4) TARGET(UNKNOWN3)</LayoutAttributes>
+            </Component>
+            <Component Name="static1">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>10</TabOrder>
+               <TopPos>2</TopPos>
+               <LeftPos>1.75</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.625</Width>
+               <Caption>Form Action Buttons</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout1</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D) THEMECLASS(HLStatic)</Post301Format>
+               <EffectiveCaption>Form Action Buttons</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="static10">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>43</TabOrder>
+               <TopPos>37.4705882352941</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>Required</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout17</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D)</Post301Format>
+               <EffectiveCaption>Required</EffectiveCaption>
+               <LayoutAttributes>INDEX(3) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="static11">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>45</TabOrder>
+               <TopPos>25</TopPos>
+               <LeftPos>6.75</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.625</Width>
+               <Caption>Text Input Fields</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout14</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D) THEMECLASS(HLStatic)</Post301Format>
+               <EffectiveCaption>Text Input Fields</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="static12">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>55</TabOrder>
+               <TopPos>99</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>States</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout22</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>States</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="static13">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>68</TabOrder>
+               <TopPos>92</TopPos>
+               <LeftPos>6.75</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.625</Width>
+               <Caption>Date Picker</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout24</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D) THEMECLASS(HLStatic)</Post301Format>
+               <EffectiveCaption>Date Picker</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="static14">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>59</TabOrder>
+               <TopPos>75</TopPos>
+               <LeftPos>6.75</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.625</Width>
+               <Caption>Single-Select Dropdown</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout19</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D) THEMECLASS(HLStatic)</Post301Format>
+               <EffectiveCaption>Single-Select Dropdown</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="static15">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>70</TabOrder>
+               <TopPos>120.470588235294</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>20</Width>
+               <Caption>Date Field (Disabled)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout27</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D)</Post301Format>
+               <EffectiveCaption>Date Field (Disabled)</EffectiveCaption>
+               <LayoutAttributes>INDEX(3) TARGET(UNKNOWN0)</LayoutAttributes>
+            </Component>
+            <Component Name="static16">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>91</TabOrder>
+               <TopPos>126</TopPos>
+               <LeftPos>6.75</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.625</Width>
+               <Caption>Radios</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout32</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D) THEMECLASS(HLStatic)</Post301Format>
+               <EffectiveCaption>Radios</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="static18">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>80</TabOrder>
+               <TopPos>109</TopPos>
+               <LeftPos>6.75</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.625</Width>
+               <Caption>Checkboxes</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout28</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D) THEMECLASS(HLStatic)</Post301Format>
+               <EffectiveCaption>Checkboxes</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="static2">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>12</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>25.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>Secondary</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout7</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>Secondary</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="static3">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>16</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>11.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>Primary</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout8</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>Primary</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="static4">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>22</TabOrder>
+               <TopPos>62</TopPos>
+               <LeftPos>44.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>Notes (ReadOnly/Disable)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout11</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>Notes (ReadOnly/Disable)</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="static5">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>26</TabOrder>
+               <TopPos>62</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>Notes</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout12</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>Notes</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="static6">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>29</TabOrder>
+               <TopPos>48</TopPos>
+               <LeftPos>6.75</LeftPos>
+               <Height>1.82352941176471</Height>
+               <ListHeight>0</ListHeight>
+               <Width>27.625</Width>
+               <Caption>Text Area</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout9</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(D) THEMECLASS(HLStatic)</Post301Format>
+               <EffectiveCaption>Text Area</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN1)</LayoutAttributes>
+            </Component>
+            <Component Name="static7">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>66</TabOrder>
+               <TopPos>116</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>Date Field</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout27</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>Date Field</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="static8">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>38</TabOrder>
+               <TopPos>33</TopPos>
+               <LeftPos>44.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>Disabled</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout16</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>Disabled</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+            <Component Name="static9">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>41</TabOrder>
+               <TopPos>33</TopPos>
+               <LeftPos>16.75</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>21</Width>
+               <Caption>First Name</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>flexLayout17</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>First Name</EffectiveCaption>
+               <LayoutAttributes>INDEX(0) TARGET(UNKNOWN6)</LayoutAttributes>
+            </Component>
+         </Components>
+         <Script Language="Visual C#">
+            <ScriptLines>
+               <ScriptLine>Option Explicit On</ScriptLine>
+               <ScriptLine>Option Strict On</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>Imports System</ScriptLine>
+               <ScriptLine>Imports Microsoft.VisualBasic</ScriptLine>
+               <ScriptLine>Imports Mongoose.IDO.Protocol</ScriptLine>
+               <ScriptLine>Imports Mongoose.Scripting</ScriptLine>
+               <ScriptLine />
+               <ScriptLine />
+               <ScriptLine>Namespace Mongoose.FormScripts</ScriptLine>
+               <ScriptLine>Public Class DesignTokenDemoYJ</ScriptLine>
+               <ScriptLine>Inherits FormScript</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>'</ScriptLine>
+               <ScriptLine>' Methods go here</ScriptLine>
+               <ScriptLine>'</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>End Class</ScriptLine>
+               <ScriptLine>End Namespace</ScriptLine>
+            </ScriptLines>
+         </Script>
+      </Form>
+   </Forms>
+</FormsAndObjectsExport>
