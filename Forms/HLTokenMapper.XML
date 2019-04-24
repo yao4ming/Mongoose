@@ -681,7 +681,7 @@
                <Binding>6</Binding>
                <Flags>524288</Flags>
                <ReadOnly>False</ReadOnly>
-               <Hidden>True</Hidden>
+               <Hidden>False</Hidden>
                <HelpContextID>0</HelpContextID>
                <Post301Format>AUTOIME(NoControl)</Post301Format>
             </Component>
@@ -830,6 +830,7 @@
                <ContainerSequence>5</ContainerSequence>
                <DataSource>object.value</DataSource>
                <Binding>1</Binding>
+               <SelectionEvent>valueChange</SelectionEvent>
                <Flags>0</Flags>
                <ReadOnly>False</ReadOnly>
                <Hidden>False</Hidden>
@@ -904,6 +905,10 @@
             <EventHandler Name="validateTokenListSrc" Sequence="0">
                <ResponseType>35</ResponseType>
                <Response>validateTokenListSrc()</Response>
+            </EventHandler>
+            <EventHandler Name="valueChange" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>valueChange()</Response>
             </EventHandler>
          </EventHandlers>
          <Variables>
@@ -3854,7 +3859,7 @@
                <ScriptLine>         Load.OrderBy = "";</ScriptLine>
                <ScriptLine>         Load.RecordCap = 1;</ScriptLine>
                <ScriptLine>         LoadCollectionResponseData ColResponse = IDOClient.LoadCollection(Load);</ScriptLine>
-               <ScriptLine>         //Application.ShowMessage(ColResponse[0, "ID"].Value);</ScriptLine>
+               <ScriptLine>         //Application.ShowMessagce(ColResponse[0, "ID"].Value);</ScriptLine>
                <ScriptLine>         if (ColResponse.Items.Count &lt; 1) {</ScriptLine>
                <ScriptLine>            Application.ShowMessage("Could not get style Id"); </ScriptLine>
                <ScriptLine>            return "";</ScriptLine>
@@ -3971,7 +3976,7 @@
                <ScriptLine>                                    "attribute: " + attribute +  "\n" + </ScriptLine>
                <ScriptLine>                                    "token: " + designToken + "\n" + </ScriptLine>
                <ScriptLine>                                    "value: " + value);</ScriptLine>
-               <ScriptLine />
+               <ScriptLine>            </ScriptLine>
                <ScriptLine>            //SET INHERITED VALUE</ScriptLine>
                <ScriptLine>            UpdateCollectionRequestData upd = new UpdateCollectionRequestData(ido);</ScriptLine>
                <ScriptLine>            IDOUpdateItem itm = new IDOUpdateItem(UpdateAction.Update);</ScriptLine>
@@ -3984,7 +3989,12 @@
                <ScriptLine>               Application.ShowMessage("VALUE WAS INHERITED update " + ColResponse[0, "elementType"].Value + " " + ColResponse[0, "class"].Value + " " + ColResponse[0, "attribute"].Value + " value: " + ColResponse[0, "value"].Value + " to " + value);</ScriptLine>
                <ScriptLine>               itm.Properties.Add("token", designToken); </ScriptLine>
                <ScriptLine>               itm.Properties.Add("value", value);</ScriptLine>
-               <ScriptLine>            }</ScriptLine>
+               <ScriptLine>               </ScriptLine>
+               <ScriptLine>               //SET THEME ATTRIBUTE FOR CHILD INHERITED THE VALUE</ScriptLine>
+               <ScriptLine>               if (!setThemeAttribute(elementType, themeClass, attribute, value)) {</ScriptLine>
+               <ScriptLine>                  Application.ShowMessage("Could not get theme attribute for elementType: " + elementType + " themeClass: " + themeClass + " " + attribute + " with " + value);</ScriptLine>
+               <ScriptLine>               }</ScriptLine>
+               <ScriptLine>            } </ScriptLine>
                <ScriptLine />
                <ScriptLine>            upd.Items.Add(itm);</ScriptLine>
                <ScriptLine>            IDOClient.UpdateCollection(upd);</ScriptLine>
@@ -4009,13 +4019,13 @@
                <ScriptLine>            itm.Properties.Add("inherited", value);</ScriptLine>
                <ScriptLine>            upd.Items.Add(itm);</ScriptLine>
                <ScriptLine>            IDOClient.UpdateCollection(upd);</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //SET THEME ATTRIBUTE FOR CHILD</ScriptLine>
+               <ScriptLine>            if (!setThemeAttribute(elementType, themeClass, attribute, value)) {</ScriptLine>
+               <ScriptLine>               Application.ShowMessage("Could not get theme attribute for elementType: " + elementType + " themeClass: " + themeClass + " " + attribute + " with " + value);</ScriptLine>
+               <ScriptLine>            }</ScriptLine>
                <ScriptLine>         }</ScriptLine>
-               <ScriptLine>         </ScriptLine>
-               <ScriptLine>         //SET THEME ATTRIBUTE FOR CHILD</ScriptLine>
-               <ScriptLine>         if (!setThemeAttribute(elementType, themeClass, attribute, value)) {</ScriptLine>
-               <ScriptLine>            Application.ShowMessage("Could not get theme attribute for elementType: " + elementType + " themeClass: " + themeClass + " " + attribute + " with " + value);</ScriptLine>
-               <ScriptLine>         }</ScriptLine>
-               <ScriptLine />
+               <ScriptLine> </ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine />
                <ScriptLine>      public void filterDesignTokenMapper() {</ScriptLine>
@@ -4055,7 +4065,7 @@
                <ScriptLine />
                <ScriptLine>      public void designTokenChange() {</ScriptLine>
                <ScriptLine>         //Application.ShowMessage("designTokenChange");</ScriptLine>
-               <ScriptLine />
+               <ScriptLine>         </ScriptLine>
                <ScriptLine>         string ido = ThisForm.Variables("varTheme").Value;</ScriptLine>
                <ScriptLine>         if (ido != "HLTheme" &amp;&amp; ido != "HLDarkTheme" &amp;&amp; ido != "HLContrastTheme") {</ScriptLine>
                <ScriptLine>            Application.ShowMessage("Theme " + ido + " must be either HLTheme, HLDarkTheme or HLContrastTheme to use this form");</ScriptLine>
@@ -4128,6 +4138,59 @@
                <ScriptLine>         }</ScriptLine>
                <ScriptLine />
                <ScriptLine>         hlTokenMapperIdo.Save();</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>      }</ScriptLine>
+               <ScriptLine>      </ScriptLine>
+               <ScriptLine>      public void valueChange() {</ScriptLine>
+               <ScriptLine>         //Application.ShowMessage("valueChange");</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         string ido = ThisForm.Variables("varTheme").Value;</ScriptLine>
+               <ScriptLine>         if (ido != "HLTheme" &amp;&amp; ido != "HLDarkTheme" &amp;&amp; ido != "HLContrastTheme") {</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("Theme " + ido + " must be either HLTheme, HLDarkTheme or HLContrastTheme to use this form");</ScriptLine>
+               <ScriptLine>            return;</ScriptLine>
+               <ScriptLine>         }  </ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         IWSIDOCollection hlTokenMapperIdo = ThisForm.PrimaryIDOCollection;</ScriptLine>
+               <ScriptLine>         string elementType = hlTokenMapperIdo.GetCurrentObjectProperty("elementType");</ScriptLine>
+               <ScriptLine>         string themeClass = hlTokenMapperIdo.GetCurrentObjectProperty("class");</ScriptLine>
+               <ScriptLine>         string attr = hlTokenMapperIdo.GetCurrentObjectProperty("attribute");</ScriptLine>
+               <ScriptLine>         string designToken = hlTokenMapperIdo.GetCurrentObjectProperty("token");</ScriptLine>
+               <ScriptLine>         string value = hlTokenMapperIdo.GetCurrentObjectProperty("value");</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         //VALUE IS MANUALLY SET WITHOUT DESIGN TOKEN</ScriptLine>
+               <ScriptLine>         if (designToken.Equals("")) {</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("set without token");</ScriptLine>
+               <ScriptLine>            </ScriptLine>
+               <ScriptLine>            //SET THEME ATTRIBUTE FOR CURRENT ELEMENT</ScriptLine>
+               <ScriptLine>            bool themeAttributeModified = setThemeAttribute(elementType, themeClass, attr, value);</ScriptLine>
+               <ScriptLine>            if (themeAttributeModified) {</ScriptLine>
+               <ScriptLine>               </ScriptLine>
+               <ScriptLine>               string[] accordionValues = ThisForm.Variables("varAccordion").Value.Split(',');</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>               //CURRENT ELEMENT IS NOT FORM</ScriptLine>
+               <ScriptLine>               if (!accordionValues[0].Equals("Form")) {</ScriptLine>
+               <ScriptLine>                  </ScriptLine>
+               <ScriptLine>                  Application.ShowMessage("theme attributes set, propragate to children elements");</ScriptLine>
+               <ScriptLine>                  </ScriptLine>
+               <ScriptLine>                  //PROPAGAGTE DESIGN TOKEN TO ALL CHILDREN ON THE MAPPER</ScriptLine>
+               <ScriptLine>                  for (int i = 1; i &lt; accordionValues.Length; i++) {</ScriptLine>
+               <ScriptLine>                     //Application.ShowMessage(accordionValues[i]);</ScriptLine>
+               <ScriptLine>                     </ScriptLine>
+               <ScriptLine>                     //IF VALUES CONTAINS HL, SET THEMECLASS INSTEAD OF ELEMENTTYPE</ScriptLine>
+               <ScriptLine>                     if (accordionValues[i].Contains("HL")) {</ScriptLine>
+               <ScriptLine>                        propagateToken(elementType, accordionValues[i], attr, designToken, value);</ScriptLine>
+               <ScriptLine>                     } else {</ScriptLine>
+               <ScriptLine>                        propagateToken(accordionValues[i], themeClass, attr, designToken, value);</ScriptLine>
+               <ScriptLine>                     }</ScriptLine>
+               <ScriptLine>                     </ScriptLine>
+               <ScriptLine>                  }</ScriptLine>
+               <ScriptLine>               }</ScriptLine>
+               <ScriptLine>            }</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            hlTokenMapperIdo.Save();</ScriptLine>
+               <ScriptLine>         } else {</ScriptLine>
+               <ScriptLine>            Application.ShowMessage("Dont change value associated with token");  </ScriptLine>
+               <ScriptLine>         }</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine />
                <ScriptLine>      public Styles parseMongooseThemeTemplates() {</ScriptLine>
@@ -4280,6 +4343,12 @@
                <ScriptLine>         Application.ShowMessage("test filter");</ScriptLine>
                <ScriptLine>         ThisForm.PrimaryIDOCollection.Filter = ThisForm.Variables("varFilter").Value;</ScriptLine>
                <ScriptLine>         ThisForm.PrimaryIDOCollection.Refresh();</ScriptLine>
+               <ScriptLine>         </ScriptLine>
+               <ScriptLine>         dynamic stuff = JsonConvert.DeserializeObject("{ 'Name': 'Jon Smith', 'Address': { 'City': 'New York', 'State': 'NY' }, 'Age': 42 }");</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>         string name = stuff.Name;</ScriptLine>
+               <ScriptLine>         string address = stuff.Address.City;</ScriptLine>
+               <ScriptLine>         Application.ShowMessage(name + " " + address);</ScriptLine>
                <ScriptLine>      }</ScriptLine>
                <ScriptLine>      </ScriptLine>
                <ScriptLine>      public bool validTokenValue(string attribute, string value) {</ScriptLine>
